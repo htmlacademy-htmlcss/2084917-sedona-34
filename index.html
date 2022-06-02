@@ -4,17 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-logo"><img class="navigation-logo" src="" alt="Логотип сайта города Седона">
+      <a class="navigation-logo">
+        <img class="navigation-logo" src="images/pictures-html/logo-sedona.svg" width="139" height="70"
+          alt="Логотип сайта города Седона">
       </a>
       <ul>
         <li class="navigation-item">
-          <a class="navigation-link">Главная</a>
+          <a class="navigation-link navigation-link-current">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="about.html">О Седоне</a>
@@ -25,13 +28,15 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Поиск</span></a>
+          <a class="navigation-link" href="hotels.html">
+            <span class="visually-hidden">Поиск</span>
+          </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Избранное</span>
-            <span class="favourites-number">12</span></a>
+            <span class="favourites-number">12</span>
+          </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Хочу сюда</a>
@@ -42,9 +47,9 @@
 
   <main class="main-index">
     <h1 class="visually-hidden">Сайт-поисковик Sedona</h1>
-    <p>Welcome to the gorgeous Sedona "Because the Grand Canyon sucks"</p>
-    <img class="photo" src="" alt="Фотография Гор">
-
+    <img class="photo" src="images/pictures-html/index-background.jpg" width="1200" height="485" alt="Фотография Гор">
+    <img class="welcome" src="images/pictures-html/welcome-sedona.svg" width="458" height="352"
+      alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks">
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -55,31 +60,30 @@
           <h3 class="advantages-title"><b>Настоящий городок</b></h3>
           <span class="advantages-number">-№1-</span>
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь
-            <img class="photo" src="" alt="Фотография города Седона">
+            <img class="photo" src="images/pictures-html/advantage-one.jpg" width="800" height="384"
+              alt="Фотография города Седона">
           </p>
           <ul>
             <li>
-              <img class="picture" src="" alt="Рисунок Дома">
               <h4 class="additional-advantages"><b>Жилье</b></h4>
               <p class="additional-advantages">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
             </li>
             <li>
-              <img class="picture" src="" alt="Рисунок Гамбургера">
               <h4 class="additional-advantages"><b>Еда</b></h4>
               <p class="additional-advantages">Всегда заказывайте топовый фирменный бургер,вы не разочаруетесь!</p>
             </li>
             <li>
-              <img class="picture" src="" alt="Рисунок Подарка">
               <h4 class="additional-advantages"><b>Сувениры</b></h4>
               <p class="additional-advantages">Не только китайского,но и настоящего местного производства!</p>
             </li>
           </ul>
-          </li>
+        </li>
         <li class="advantages-item">
           <h3 class="advantages-title"><b>Там есть мост дьявола</b></h3>
           <span class="advantages-number">-№2-</span>
-          <p class="advantages-description"> <img class="photo" src="" alt="Фотография Гор и каньона"> Да,по нему можно
-            пройти!Если вы осмелитесь,разумеется</p>
+          <p class="advantages-description">Да,по нему можно пройти!Если вы осмелитесь,разумеется</p>
+          <img class="photo" src="images/pictures-html/advantage-two.jpg" width="800" height="384"
+            alt="Фотография Гор и каньона">
         </li>
         <li class="advantages-item">
           <h3 class="advantages-title"><b>Небольшая площадь</b></h3>
@@ -103,23 +107,15 @@
       <h2 class="visually-hidden">Поиск отеля</h2>
       <b>Заинтересовались?</b>
       <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
       <button class="button" type="submit">Поиск гостиницы в Седоне</button>
     </section>
 
-    <form class="newsletter-subscribe">
+    <form class="newsletter-subscribe" action="https://echo.htmlacademy.ru/" method="post">
       <h2>Подпишитесь на рассылку</h2>
-    </form>
-
-    <p>Только полезная информация и никакого спама,честное бойскаутское!</p>
-
-    <form class="newsletter-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-
+      <p>Только полезная информация и никакого спама,честное бойскаутское!</p>
       <label class="newsletter-subscribe-form"> <input class="field" type="email" name="newsletter-email"
           id="newsletter-email" placeholder="Ваш Email" required></label>
-
       <button class="button newsletter-button" type="submit">Подписаться</button>
-
     </form>
 
   </main>
@@ -146,9 +142,10 @@
 
     <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     <a class="htmlacademy-link" href=https://htmlacademy.ru>
-      <span class="visually-hidden">Сделано в .html academy</span></a>
-
+      <span class="visually-hidden">Сделано в .html academy</span>
+    </a>
   </footer>
+
 </body>
 
 </html>
