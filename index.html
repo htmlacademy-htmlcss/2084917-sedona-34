@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -11,11 +12,12 @@
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo">
-        <img class="navigation-logo" src="images/pictures-html/logo-sedona.svg" width="139" height="70" alt="Логотип сайта города Седона">
+        <img class="navigation-logo" src="images/pictures-html/logo-sedona.svg" width="139" height="70"
+          alt="Логотип сайта города Седона">
       </a>
       <ul>
         <li class="navigation-item">
-          <a class="navigation-link">Главная</a>
+          <a class="navigation-link navigation-link-current">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="about.html">О Седоне</a>
@@ -26,16 +28,15 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <img class="navigation-link" src="images/pictures-html/search-icon.svg" width="19" height="19" alt="Поиск">
-            <span class="visually-hidden">Поиск</span></a>
+          <a class="navigation-link" href="hotels.html">
+            <span class="visually-hidden">Поиск</span>
+          </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <img class="navigation-link" src="images/pictures-html/favorite-icon.svg" width="19" height="17"
-              alt="Избранное">
             <span class="visually-hidden">Избранное</span>
-            <span class="favourites-number">12</span></a>
+            <span class="favourites-number">12</span>
+          </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Хочу сюда</a>
@@ -64,20 +65,14 @@
           </p>
           <ul>
             <li>
-              <img class="picture" src="images/pictures-html/advantage-icon-accomodation.svg" width="75" height="72"
-                alt="Рисунок Дома">
               <h4 class="additional-advantages"><b>Жилье</b></h4>
               <p class="additional-advantages">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
             </li>
             <li>
-              <img class="picture" src="images/pictures-html/advantage-icon-food.svg" width="74" height="70"
-                alt="Рисунок Гамбургера">
               <h4 class="additional-advantages"><b>Еда</b></h4>
               <p class="additional-advantages">Всегда заказывайте топовый фирменный бургер,вы не разочаруетесь!</p>
             </li>
             <li>
-              <img class="picture" src="images/pictures-html/advantage-icon-presents.svg" width="64" height="76"
-                alt="Рисунок Подарка">
               <h4 class="additional-advantages"><b>Сувениры</b></h4>
               <p class="additional-advantages">Не только китайского,но и настоящего местного производства!</p>
             </li>
@@ -117,7 +112,7 @@
 
     <form class="newsletter-subscribe" action="https://echo.htmlacademy.ru/" method="post">
       <h2>Подпишитесь на рассылку</h2>
-      <img class="photo" src="/images/pictures-html/index-background-newsletter.jpg" width="1200" height="411"
+      <img class="photo" src="images/pictures-html/index-background-newsletter.jpg" width="1200" height="411"
         alt="Фотография Гор">
       <p>Только полезная информация и никакого спама,честное бойскаутское!</p>
       <label class="newsletter-subscribe-form"> <input class="field" type="email" name="newsletter-email"
@@ -132,22 +127,16 @@
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="social-button" href=https://vk.com/htmlacademy>
-          <img class="social-icon" src="/images/pictures-html/social-icon-vk.svg" width="24" height="14"
-            alt="ВКонтакте">
           <span class="visually-hidden">ВКонтакте</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a class="social-button" href=https://t.me/htmlacademy>
-          <img class="social-icon" src="/images/pictures-html/social-icon-telegram.svg" width="18" height="16"
-            alt="Телеграм">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
-          <img class="social-icon" src="/images/pictures-html/social-icon-youtube.svg" width="22" height="17"
-            alt="youtube">
           <span class="visually-hidden">youtube</span>
         </a>
       </li>
@@ -155,8 +144,6 @@
 
     <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     <a class="htmlacademy-link" href=https://htmlacademy.ru>
-      <img class="htmlacademy-link" src="/images/pictures-html/icon-htmlacademy.svg" width="115" height="33"
-        alt="Сделано в html academy">
       <span class="visually-hidden">Сделано в .html academy</span>
     </a>
   </footer>
