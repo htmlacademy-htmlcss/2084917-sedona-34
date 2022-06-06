@@ -7,14 +7,14 @@
   font-display: swap;
 }
 
-  @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
 
-    font-display: swap;
-  }
+  font-display: swap;
+}
 
 
 @font-face {
@@ -69,28 +69,85 @@ body {
   background-repeat: no-repeat;
 }
 
+.advantages {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 b.advantages {
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 p.advantages {
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-align: center;
-text-transform: uppercase;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: none;
+  color: #000000;
+  background-color: #ffffff;
 }
 
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: none;
+}
 
+.advantages-number {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
 
-.advantages {
+.additional-advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: none;
+  color: #000000;
+}
+
+.additional-advantages-accomadation,
+.additional-advantages-food,
+.additional-advantages-presents {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
 }
 
+.accomadation,
+.presents {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.food {
+  background: #ffffff;
+}
+
+.first-advantage {
+  background: #82B3D3;
+}
+
+.second-advantage {
+  background: #82B3D3;
+}
+.third-advantage,
+.fifth-advantage {
+ background: rgba(131, 179, 211, 0.12);
+}
+
+.fourth-advantage {
+  background: rgba(131, 179, 211, 0.2);
+}
