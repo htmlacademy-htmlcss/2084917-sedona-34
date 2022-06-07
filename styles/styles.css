@@ -40,6 +40,18 @@ body {
   text-transform: capitalize;
 }
 
+.button-navigation {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: #756157;
+}
+
+
 .main-index {
   color: #000000;
   background-color: #ffffff;
@@ -172,7 +184,7 @@ body {
   background: #ffffff;
 }
 
-.button {
+.button-hotel-serach {
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -214,6 +226,13 @@ body {
 }
 
 .newsletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
   background-color: #82B3D3;
 }
 
@@ -235,9 +254,6 @@ body {
   text-transform: uppercase;
 }
 
-.main-inner {
-
-}
 .inner-header {
   color: #ffffff;
   background: #000000;
@@ -402,13 +418,12 @@ body {
 
 .hotel-search-resalts-group {
   font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .newsletter-subscribe-catalog {
   text-align: center;
   background-image: none;
-
 }
