@@ -262,6 +262,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.hotel-sorting {
+  background-image: url("../images/pictures-catalog/background-catalog.jpg");;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
