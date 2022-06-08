@@ -34,7 +34,7 @@
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Избранное</span>
-            <span class="favourites-number">12</span></a>
+            <span class="favourites-amount">12</span></a>
         </li>
         <li class="navigation-item">
           <a class="button button-navigation" href="#">Хочу сюда</a>
@@ -43,98 +43,84 @@
     </nav>
   </header>
 
+
   <main class="main-inner">
     <div class="hotel-sorting">
-    <header class="inner-header">
-      <h1 class="inner-header-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">
-            <span class="visually-hidden">Главная</span></a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
-        </li>
-      </ul>
-    </header>
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная</span></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+      </header>
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиниц с фильтрами</h2>
         <form class="hotel-search-filter-group" action="https://echo.htmlacademy.ru/" method="get">
-
           <fieldset class="hotel-search-filter-group">
             <legend class="hotel-search-filter-title">Инфраструктура</legend>
             <ul class="hotel-search-filter-list">
               <li class="hotel-search-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="swimming pool" checked>
-
                   Бассейн
                 </label>
               </li>
               <li class="hotel-search-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="parking" checked>
-
                   Парковка
                 </label>
               </li>
               <li class="hotel-search-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="wi-fi">
-
                   Wi-Fi
                 </label>
               </li>
             </ul>
-
           </fieldset>
-
           <fieldset class="hotel-search-filter-group">
             <legend class="hotel-search-filter-title">Тип жилья</legend>
             <ul class="hotel-search-filter-list">
               <li class="hotel-search-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotel-search-group" value="hotel" checked>
-
                   Гостиница
                 </label>
               </li>
               <li class="hotel-search-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotel-search-group" value="motel">
-
                   Мотель
                 </label>
               </li>
               <li class="hotel-search-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotel-search-group" value="apartaments">
-
                   Аппартаменты
                 </label>
               </li>
             </ul>
-
           </fieldset>
-
           <fieldset class="hotel-search-filter-group">
             <legend class="filter-price">Стоимость, <span>₽</span></legend>
-            <label class="up"><input type="text" value="0">от</label>
-            <label class="to"><input type="text" value="9000">до</label>
-
+            <label class="low-price"><input type="text" value="0">от</label>
+            <label class="high-price"><input type="text" value="9000">до</label>
           </fieldset>
-
           <button class="button-additional-one" type="submit">Применить</button>
           <button class="button-additional-two" type="reset">Сбросить</button>
         </form>
       </section>
     </div>
 
-
     <section class="hotel-search-resalts-group">
       <h2 class="visually-hidden">Результ поиска</h2>
       <p class="hotels-results">Найдено гостиниц:<span>38</span></p>
-
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярное</option>
         <option value="cheap">Сначала дешёвое</option>
@@ -151,7 +137,6 @@
         <span class="visually-hidden">Показать список</span>
       </a>
     </section>
-
 
     <section class="hotel-name">
       <h3 class="visually-hidden">Название гостиниц</h3>
@@ -254,47 +239,45 @@
 
     <form class="hotel-search-resalts-group">
       <fieldset class="hotel-search-resalts-group">
-        <legend>Гостиниц на странице:<span></span></legend>
+        <legend>Гостиниц на странице:</legend>
         <select class="select-control" aria-label="Сортировка">
           <option value="numbers">4</option>
         </select>
       </fieldset>
     </form>
 
-    <form class="newsletter-subscribe-catalog" action="https://echo.htmlacademy.ru/" method="post">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама,честное бойскаутское!</p>
-      <label class="newsletter-subscribe-form"> <input class="field" type="email" name="newsletter-email"
-          id="newsletter-email" placeholder="Ваш Email" required></label>
+    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="newsletter-subtitle">Только полезная информация и никакого спама,честное бойскаутское!</p>
+      <label class="visually-hidden" for="newsletter-email">email</label>
+      <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
       <button class="button newsletter-button" type="submit">Подписаться</button>
     </form>
-  </main>
 
-  <footer class="page-footer">
-    <h2 class="visually-hidden">Контакты</h2>
-    <ul class="footer-social-list">
-      <li class="footer-social-item">
-        <a class="social-button" href=https://vk.com/htmlacademy>
-          <span class="visually-hidden">ВКонтакте</span>
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a class="social-button" href=https://t.me/htmlacademy>
-          <span class="visually-hidden">Телеграм</span>
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">youtube</span>
-        </a>
-      </li>
-    </ul>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Контакты</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="social-button" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-button" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+      </ul>
 
-    <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <a class="htmlacademy-link" href=https://htmlacademy.ru>
-      <span class="visually-hidden">Сделано в .html academy</span>
-    </a>
-  </footer>
+      <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <span class="visually-hidden">Сделано в</span>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+    </footer>
 
 </body>
 
