@@ -43,7 +43,6 @@
     </nav>
   </header>
 
-
   <main class="main-inner">
     <div class="hotel-sorting">
       <header class="inner-header">
@@ -89,19 +88,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-search-group" value="hotel" checked>
+                  <input class="control-input" type="radio" name="catalog-filter-group" value="hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-search-group" value="motel">
+                  <input class="control-input" type="radio" name="catalog-filter-group" value="motel">
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-search-group" value="apartaments">
+                  <input class="control-input" type="radio" name="catalog-filter-group" value="apartaments">
                   Аппартаменты
                 </label>
               </li>
@@ -155,7 +154,7 @@
             <a class="button button-additional" href="#">В Избранное</a>
           </div>
           <div class="hotel-rating">
-            <span class="hotel-rating-4"><span class="visually-hidden">4 звезды</span></span>
+            <span class="hotel-rating hotel-rating-4"><span class="visually-hidden">4 звезды</span></span>
             <a class="button button-rating" href="#">Рейтинг:8,5</a>
           </div>
         </li>
@@ -173,7 +172,7 @@
             <a class="button button-selected" href="#">В избранном</a>
           </div>
           <div class="hotel-rating">
-            <span class="hotel-rating-4"><span class="visually-hidden">4 звезды</span></span>
+            <span class="hotel-rating hotel-rating-4"><span class="visually-hidden">4 звезды</span></span>
             <a class="button button-rating" href="#">Рейтинг:9,2</a>
           </div>
         </li>
@@ -191,7 +190,7 @@
             <a class="button button-additional" href="#">в избранное</a>
           </div>
           <div class="hotel-rating">
-            <span class="hotel-rating-3"><span class="visually-hidden">3 звезды</span></span>
+            <span class="hotel-rating hotel-rating-3"><span class="visually-hidden">3 звезды</span></span>
             <a class="button button-rating" href="#">Рейтинг:6,9</a>
           </div>
         </li>
@@ -209,7 +208,7 @@
             <a class="button button-additional" href="#">В избранное</a>
           </div>
           <div class="hotel-rating">
-            <span class="hotel-rating-2"><span class="visually-hidden">2 звезды</span></span>
+            <span class="hotel-rating hotel-rating-2"><span class="visually-hidden">2 звезды</span></span>
             <a class="button button-rating" href="#">Рейтинг:5,0</a>
           </div>
         </li>
@@ -237,8 +236,8 @@
       </li>
     </ul>
 
-    <form class="catalog-filter-group">
-      <fieldset class="catalog-filter-group">
+    <form class="hotels-anount">
+      <fieldset class="hotels-anount">
         <legend>Гостиниц на странице:</legend>
         <select class="select-control" aria-label="Сортировка">
           <option value="numbers">4</option>
@@ -246,13 +245,14 @@
       </fieldset>
     </form>
 
-    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="newsletter-form newsletter-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-subtitle">Только полезная информация и никакого спама,честное бойскаутское!</p>
       <label class="visually-hidden" for="newsletter-email">email</label>
       <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
       <button class="button newsletter-button" type="submit">Подписаться</button>
     </form>
+</main>
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
@@ -273,7 +273,6 @@
           </a>
         </li>
       </ul>
-
       <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <span class="visually-hidden">Сделано в</span>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
