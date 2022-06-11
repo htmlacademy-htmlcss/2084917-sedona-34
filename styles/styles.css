@@ -14,7 +14,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0 display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -81,6 +88,28 @@ body {
   background-color: #ffffff;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-logo {
+  width: 139px;
+  margin-right: auto;
+  padding: 0;
+}
+
+.navigation-list {
+  width: 485px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 305px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -101,12 +130,27 @@ body {
   background: #7DB54F;
 }
 
+.main-container {
+  flex-grow: 1;
+  
+}
+
 .main-index {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/pictures-html/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages {
@@ -127,6 +171,48 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-transform: none;
+}
+
+.advantages-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  /* width: 1200; */
+}
+
+.advantages-item {
+  width: 400px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.block-first {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 1200;
+  align-items: center;
+}
+
+.block-second {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 1200;
+  align-items: center;
+  
+}
+block-third {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 1200;
+  align-items: center;
 }
 
 .advantages-title {
@@ -235,7 +321,8 @@ body {
 }
 
 .newsletter-form-catalog {
-  color:#000000;;
+  color: #000000;
+  ;
   background-color: #ffffff;
   background-image: none;
 }
@@ -257,6 +344,27 @@ body {
 .page-footer a {
   color: #000000;
   text-decoration: none;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  width: 150px;
+  margin-right: 41.5;
+}
+
+.social-contact {
+  width: 720px;
+  margin: auto;
+}
+
+* .frontend-developer {
+  width: 115px;
+  margin-left: auto;
 }
 
 .footer-contacts-phone {

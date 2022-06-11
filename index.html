@@ -15,7 +15,7 @@
         <img class="navigation-logo" src="images/pictures-html/logo-sedona.svg" width="139" height="70"
           alt="Логотип сайта города Седона">
       </a>
-      <ul>
+      <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link navigation-link-current">Главная</a>
         </li>
@@ -45,27 +45,33 @@
     </nav>
   </header>
 
-  <main class="main-index">
+  <main class="main-container main-index">
+    
     <h1 class="visually-hidden visually-hidden-main-index">Сайт-поисковик Sedona</h1>
-    <img class="welcome" src="images/pictures-html/welcome-sedona.svg" width="458" height="352"
+    <img class="logo" src="images/pictures-html/welcome-sedona.svg" width="458" height="352"
       alt="Добро пожаловать в великолепный город Седона">
 
     <section class="advantages">
+      <div class="container">
       <h2 class="visually-hidden">Преимущества</h2>
       <b class="advantages-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
       <p class="advantages-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
       <ol class="advantages-list">
         <li class="advantages-item">
           <div class="first-advantage">
+            <div class="block-first">
             <h3 class="advantages-title advantages-title-town">Настоящий городок</h3>
             <span class="advantages-number advantages-number-first">-№1-</span>
             <p class="advantages-description advantages-description-town">Седона — не аттракцион для туристов, там течёт
               своя жизнь</p>
-            <img class="photo-town" src="images/pictures-html/advantage-one.jpg" width="800" height="384"
+              <img class="photo-town" src="images/pictures-html/advantage-one.jpg" width="800" height="384"
               alt="Фотография города Седона">
+            </div>
           </div>
           <ul>
             <li>
+              <div class="block-second">
               <div class="accomadation">
                 <h4 class="advantages-title">Жилье</h4>
                 <p class="advantages-description">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
@@ -84,20 +90,24 @@
                 <p class="advantages-description">Не только китайского,но и настоящего местного
                   производства!</p>
               </div>
+              </div>
             </li>
           </ul>
         <li class="advantages-item">
           <div class="second-advantage">
+            <div class="block-third">
             <h3 class="advantages-title advantages-title-bridge">Там есть мост дьявола</h3>
             <span class="advantages-number advantages-number-second">-№2-</span>
             <p class="advantages-description advantages-description-bridge">Да,по нему можно пройти!Если вы
               осмелитесь,разумеется</p>
             <img class="photo-bridge" src="images/pictures-html/advantage-two.jpg" width="800" height="384"
               alt="Фотография Гор и каньона">
+            </div>
           </div>
         </li>
         <li class="advantages-item">
           <div class="third-advantage">
+            <div class="block-third">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <span class="advantages-number">-№3-</span>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
@@ -116,6 +126,7 @@
             <span class="advantages-number">-№5-</span>
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
+        </div>
         </li>
       </ol>
     </section>
@@ -136,10 +147,11 @@
       <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
       <button class="button newsletter-button" type="submit">Подписаться</button>
     </form>
-
+    
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer-container"
     <h2 class="visually-hidden">Контакты</h2>
     <ul class="footer-social-list">
       <li class="footer-social-item">
@@ -158,9 +170,13 @@
         </a>
       </li>
     </ul>
+    <div class="social-contact">
     <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <span class="visually-hidden">Сделано в</span>
-    <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+    </div>
+    <div class="frontend-developer">
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Сделано в</span>.html academy</a>
+</div>
+</div>
   </footer>
 
 </body>
