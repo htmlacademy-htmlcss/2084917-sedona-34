@@ -188,23 +188,29 @@ body {
 .first-block {
   display: flex;
   width: 1200px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .second-block {
   display: flex;
   width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .third-block {
   display: flex;
   width: 1200px;
-  /* margin: 0 auto; */
+  margin: 0;
+  padding: 0;
 }
 
 .fourth-block {
   display: flex;
   width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-title {
