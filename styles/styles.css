@@ -153,9 +153,9 @@ body {
   margin: 0 auto;
 }
 
-/* .header-block {
-padding: 0;
-} */
+.header-block {
+  padding: 0;
+}
 
 .advantages-subtitle {
   margin: 0;
@@ -197,6 +197,11 @@ padding: 0;
   padding: 0;
 }
 
+.additional-advantages-list {
+  padding: 0;
+  margin: 0;
+}
+
 .second-block {
   display: flex;
   width: 1200px;
@@ -213,7 +218,6 @@ padding: 0;
 
 .fourth-block {
   display: flex;
-  width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -300,7 +304,6 @@ padding: 0;
   color: #333333;
   margin: 0;
 }
-
 
 .newsletter-form {
   text-align: center;
@@ -396,6 +399,7 @@ padding: 0;
   line-height: 78px;
   text-align: left;
   text-transform: capitalize;
+  margin: 0;
 }
 
 .breadcrumbs-link {
@@ -441,6 +445,7 @@ padding: 0;
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .select-control {
