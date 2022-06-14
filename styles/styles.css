@@ -138,12 +138,12 @@ body {
 .main-index {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("../images/pictures-html/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 .page-container {
+  background-image: url("../images/pictures-html/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   width: 1200px;
   margin: 0 auto;
 }
@@ -167,6 +167,12 @@ body {
   background-color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+}
+
+.advantages-main {
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .advantages-header {
@@ -218,6 +224,7 @@ body {
 
 .fourth-block {
   display: flex;
+  width: 1200px;
   margin: 0;
   padding: 0;
 }
