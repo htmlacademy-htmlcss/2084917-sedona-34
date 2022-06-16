@@ -31,6 +31,17 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -101,17 +112,17 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 490px;
   margin: 0;
   padding: 0;
-}
-
-.navigation-user {
-  max-width: 250px;
-  margin-left: auto;
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -123,12 +134,24 @@ body {
   text-transform: capitalize;
 }
 
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+  min-width: 19px;
+  min-height: 19px;
+}
+
 .favourites-amount {
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
   color: #ffffff;
   background: #7DB54F;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .main-container {
@@ -151,14 +174,11 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 145px;
 }
 
 .header-block {
-  padding: 0;
-}
-
-.advantages-subtitle {
-  margin: 0;
   padding: 0;
 }
 
@@ -167,6 +187,8 @@ body {
   background-color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  display: block;
+  flex-wrap: wrap;
 }
 
 .advantages-main {
@@ -179,6 +201,8 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  padding-top: 63px;
+  margin: 0;
 }
 
 .advantages-subtitle {
@@ -186,48 +210,43 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-transform: none;
+  margin: 0;
+  padding-top: 31px;
+  padding-bottom: 90px;
 }
 
 .advantages-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 1200px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .additional-advantages-list {
-padding: 0;
+width: 1200px;
+list-style-type: none;
 margin: 0;
+padding: 0;
 }
 
 .first-block {
   display: flex;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
 }
 
 .second-block {
   display: flex;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
 }
 
 .third-block {
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
 }
 
 .fourth-block {
   display: flex;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
 }
 
 .advantages-title {
@@ -251,7 +270,6 @@ margin: 0;
   line-height: 21px;
   color: #333333;
   text-transform: none;
-  margin: 0;
 }
 
 .advantages-title-town,
@@ -272,24 +290,29 @@ margin: 0;
 .first-advantage,
 .second-advantage {
   background-color: #82B3D3;
+  padding: 92px 84px;
 }
 
 .third-advantage,
 .fifth-advantage {
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 103px 85px 102px;
 }
 
 .fourth-advantage {
   background-color: rgba(131, 179, 211, 0.2);
+  padding: 103px 85px 102px;
 }
 
 .accomadation,
 .presents {
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 80px 81px 85px;
 }
 
 .food {
   background-color: #ffffff;
+  padding: 80px 85px 81px;
 }
 
 .hotel-search-block {
@@ -380,6 +403,10 @@ margin: 0;
   justify-content: space-between;
 }
 
+.footer-social-list {
+  list-style-type: none;
+}
+
 .footer-contacts-phone {
   font-weight: 400;
   font-size: 40px;
@@ -417,6 +444,10 @@ margin: 0;
   margin: 0;
 }
 
+.breadcrumbs {
+  list-style-type: none;
+}
+
 .breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
@@ -424,17 +455,20 @@ margin: 0;
   text-decoration: none;
   color: #ffffff;
 }
+.catalog-filter-list{
+  list-style-type: none;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+}
 
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-transform: none;
-}
-
-.catalog-filter-group {
-  margin: 0;
-  padding: 0;
 }
 
 .control {
@@ -482,6 +516,9 @@ margin: 0;
   line-height: 21px;
   color: #333333;
 }
+.hotels-list {
+  list-style-type: none;
+}
 
 .hotel-title {
   font-weight: 700;
@@ -509,6 +546,7 @@ margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  list-style-type: none;
 }
 
 .pagination-link {
