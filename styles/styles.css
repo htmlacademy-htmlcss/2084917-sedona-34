@@ -75,12 +75,19 @@ body {
 
 .button-accept {
   background-color: #82B3D3;
+  padding: 14px 15px;
+  width: 160px;
+  height: 48px;
+  margin-bottom: 20px;
 }
 
 .button-cancel {
   font-weight: 400;
   text-transform: none;
-  background-color: none;
+  background-color: transparent;
+  padding: 14px 15px;
+  width: 160px;
+  height: 48px;
 }
 
 .button-pictures,
@@ -491,6 +498,8 @@ body {
 }
 
 .catalog-filter {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -532,6 +541,12 @@ body {
   line-height: 21px;
 }
 
+.button-block {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
 .catalog-filter-block {
   display: flex;
   width: 1056px;
@@ -541,6 +556,7 @@ body {
 
 .catalog-sorting-group {
   display: flex;
+  justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 56px;
 }
