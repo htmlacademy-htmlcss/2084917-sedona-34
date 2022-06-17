@@ -68,6 +68,7 @@ body {
 }
 
 .button-serach {
+  padding: 12px 15px;
   font-size: 20px;
   line-height: 36px;
 }
@@ -203,6 +204,7 @@ body {
 }
 
 .advantages-main {
+  padding: 63px 273px 90px;
   color: #000000;
   background-color: #ffffff;
   text-align: center;
@@ -221,9 +223,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-transform: none;
-  padding-top: 31px;
-  padding-bottom: 90px;
-  margin: 0;
+  margin-bottom: 90px;
 }
 
 .advantages-list {
@@ -238,6 +238,7 @@ body {
 
 .additional-advantages-list {
   width: 1200px;
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -332,11 +333,9 @@ body {
   padding: 80px 85px 81px;
 }
 
-.hotel-search-block {
-  width: 1200px;
-}
 
 .hotel-search {
+  padding: 91px 304px 93px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -356,16 +355,12 @@ body {
   line-height: 26px;
   text-transform: none;
   color: #333333;
-  padding-top: 29px;
-  padding-bottom: 56px;
-  margin: 0;
-}
-
-.newsletter-form-block {
-  width: 1200px;
+  margin-bottom: 56px;
 }
 
 .newsletter-form {
+  max-width: 1200px;
+  padding: 94px 200px;
   text-align: center;
   color: #ffffff;
   background-color: #86adcd;
@@ -382,7 +377,6 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 29px;
-
 }
 
 .newsletter-subtitle {
@@ -391,9 +385,7 @@ body {
   line-height: 26px;
   text-align: center;
   text-decoration: none;
-  padding-top: 29px;
-  padding-bottom: 46px;
-  margin: 0;
+  margin-bottom: 46px;
 }
 
 .newsletter-form-catalog {
@@ -423,9 +415,10 @@ body {
 
 .page-footer-container {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  justify-content: space-between;
+  padding: 40px 70px 30px;
 }
 
 .footer-social {
@@ -573,6 +566,9 @@ body {
 }
 
 .hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
