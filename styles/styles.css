@@ -199,6 +199,7 @@ body {
 
 .header-block {
   padding: 0;
+  margin: 0;
 }
 
 .advantages {
@@ -206,8 +207,6 @@ body {
   background-color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  display: block;
-  flex-wrap: wrap;
 }
 
 .advantages-main {
@@ -244,8 +243,10 @@ body {
 }
 
 .additional-advantages-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 1200px;
-
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -269,7 +270,8 @@ body {
 
 .fourth-block {
   display: flex;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-title {
@@ -289,12 +291,15 @@ body {
 }
 
 .advantages-description {
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   text-transform: none;
   margin: 0;
+  padding: 0;
 }
 
 .advantages-title-town,
@@ -337,7 +342,7 @@ body {
 
 .food {
   background-color: #ffffff;
-  padding: 80px 85px 81px;
+  padding: 80px 81px 85px;
 }
 
 
@@ -355,6 +360,7 @@ body {
   margin-top: 0;
   margin-bottom: 29px;
 }
+
 
 .hotel-search-subtitle {
   font-weight: 400;
