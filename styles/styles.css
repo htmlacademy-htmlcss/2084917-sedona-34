@@ -426,16 +426,16 @@ body {
   margin-bottom: 46px;
 }
 
-.newsletter-catalog {
-  color: #000000;
-  background-color: #ffffff;
-  background-image: none;
-}
-
 .newsletter-form {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+}
+
+.newsletter-catalog {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: none;
 }
 
 .field {
@@ -448,6 +448,14 @@ body {
   background-color: #F2F2F2;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 70px 30px;
+}
+
 .page-footer {
   color: #000000;
   background-color: #ffffff;
@@ -456,14 +464,6 @@ body {
 .page-footer a {
   color: #000000;
   text-decoration: none;
-}
-
-.page-footer-container {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 40px 70px 30px;
 }
 
 .footer-social {
