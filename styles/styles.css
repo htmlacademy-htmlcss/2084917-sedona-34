@@ -61,13 +61,15 @@ body {
   display: block;
 }
 
-.newsletter-button {
+.button-newsletter {
+  width: 200px;
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
 }
 
-.button-serach {
+.button-search {
+  width: 574px;
   padding: 12px 15px;
   font-size: 20px;
   line-height: 36px;
@@ -394,7 +396,7 @@ body {
   margin-bottom: 56px;
 }
 
-.newsletter-form {
+.newsletter {
   max-width: 1200px;
   padding: 94px 200px;
   text-align: center;
@@ -424,13 +426,20 @@ body {
   margin-bottom: 46px;
 }
 
-.newsletter-form-catalog {
+.newsletter-catalog {
   color: #000000;
   background-color: #ffffff;
   background-image: none;
 }
 
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .field {
+  width: 600px;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
   font-size: 18px;
