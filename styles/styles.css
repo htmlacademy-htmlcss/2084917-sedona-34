@@ -287,8 +287,12 @@ body {
 }
 
 .advantages-item {
-  display: flex;
-  flex-wrap: wrap;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.advantages-item-more {
+  width: 400px;
 }
 
 .additional-advantages-list {
@@ -301,11 +305,12 @@ body {
 }
 
 .additional-advantages-item {
-  width: 400px;
+ display: flex;
+ width: 400px;
 }
 
 .main-advantages {
-  width: 400px;
+  padding: 103px 85px;
 }
 
 .main-advantages,
@@ -320,10 +325,18 @@ body {
   margin: 0;
 }
 
-.main-advantages-picture {
+.additional-advantages-accommodation,
+.additional-advantages-food,
+.additional-advantages-presents {
+  padding: 80px 85px;
+
+}
+
+.main-advantages-blue {
   background-color: #82B3D3;
   color: #ffffff;
   margin: 0;
+  padding: 92px 85px;
 }
 
 .main-advantages-road {
@@ -337,15 +350,21 @@ body {
   margin: 0;
 }
 
-.picture-block-reverse {
-  flex-direction: row-reverse;
+.main-advantages-photo {
+  display: block;
+  width: 800px;
 }
 
 .photo-town,
 .photo-bridge {
   display: block;
-  width: 800px;
+  object-fit: cover;
 }
+
+.main-advantages:nth-child(5) {
+  margin: 0;
+}
+
 
 .hotel-search {
   padding: 91px 304px 93px;
