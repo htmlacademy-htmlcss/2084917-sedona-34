@@ -154,6 +154,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 17px;
   font-family: "PT Sans", sans-serif;
@@ -175,6 +176,15 @@ body {
 .navigation-user .navigation-link {
   min-width: 19px;
   min-height: 19px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .favourites-amount {
@@ -367,7 +377,6 @@ body {
 }
 
 .main-advantages-photo {
-  display: block;
   width: 800px;
 }
 
