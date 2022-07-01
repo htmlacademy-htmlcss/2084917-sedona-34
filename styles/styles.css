@@ -49,6 +49,7 @@ body {
 
 .button {
   display: inline-block;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -62,6 +63,30 @@ body {
   cursor: pointer;
   padding: 12px 15px;
 }
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  outline: 2px solid #dbb590;
+  background-color: #4e2e0e;
+}
+
+.button:active {
+  background-color: #756157;
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
+}
+
+/* .button:disabled:hover {
+  background-color: #595959;
+  outline: none;
+  cursor: default;
+} */
+
 
 .button-navigation {
   margin-top: 14px;
@@ -110,6 +135,8 @@ body {
   width: 48px;
   height: 48px;
   margin-right: 8px;
+  width: 48px;
+  height: 48px;
 }
 
 .button-additional {
@@ -316,6 +343,10 @@ body {
  min-width: 384px;
 }
 
+.main-advantages {
+  padding: 103px 85px;
+}
+
 .advantages-item-more {
   width: 400px;
   min-height: 384px;
@@ -336,13 +367,36 @@ body {
  min-height: 384px;
 }
 
-.main-advantages {
-  padding: 103px 85px;
+.additional-advantages,
+.additional-advantages,
+.additional-advantages {
+  padding: 182px 85px;
+}
+
+.icon-accommodation {
+  background-image: url("../images/pictures-html/icon-accommodation.svg");
+  background-repeat: no-repeat;
+  background-size: 76px 73px;
+  background-position: 163px 80px;
+}
+
+
+.icon-food {
+  background-image: url("../images/pictures-html/icon-food.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 71px;
+  background-position: center;
+}
+
+.icon-presents {
+  background-image: url("../images/pictures-html/icon-presents.svg");
+  background-repeat: no-repeat;
+  background-size: 65px 77px;
+  background-position: 163px 80px;
 }
 
 .main-advantages,
-.additional-advantages-accommodation,
-.additional-advantages-presents {
+.additional-advantages {
   background-color: rgba(131, 179, 211, 0.12);
   margin: 0;
 }
@@ -362,12 +416,6 @@ body {
 .main-advantages-road {
   background-color: rgba(131, 179, 211, 0.2);
   margin: 0;
-}
-
-.additional-advantages-accommodation,
-.additional-advantages-food,
-.additional-advantages-presents {
-  padding: 80px 85px;
 }
 
 .picture-block {
@@ -506,6 +554,42 @@ body {
   text-transform: uppercase;
 }
 
+.footer-social-link:default {
+ color: #83B3D3;
+}
+
+.footer-social-link:hover {
+  color: #68A2CA;
+}
+
+.footer-social-link:focus {
+  color: #68A2CA;
+}
+
+.footer-social-link:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
+.htmlacademy-link,
+.footer-contacts-phone:default {
+  color: #000000;
+}
+
+.htmlacademy-link,
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.htmlacademy-link,
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.htmlacademy-link,
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .page-container-catalog {
   width: 1200px;
   margin: 0 auto;
@@ -600,16 +684,15 @@ body {
   margin-right: 70px;
 }
 
-.catalog-filter-block {
+.catalog-sorting-block {
   display: flex;
   width: 1056px;
   flex-direction: column;
   margin-left: 72px;
 }
 
-.catalog-sorting-group {
+.catalog-sorting-group{
   display: flex;
-  justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 56px;
 }
@@ -630,7 +713,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin-left: 191px;
+  margin-left: auto;
 }
 
 .hotels-list {
