@@ -190,7 +190,7 @@ body {
 }
 
 .button-cancel:focus {
-border: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
 }
 
 .button-cancel:default {
@@ -218,7 +218,7 @@ border: 3px solid #83B3D3;
   fill: #ffffff;
 }
 
-.position-card:default svg{
+.position-card:default svg {
   border: 2px solid #E5E5E5;
 }
 
@@ -300,7 +300,7 @@ border: 3px solid #83B3D3;
 .button-rating:default,
 .button-rating:hover,
 .button-rating:focus,
-.button-rating:active  {
+.button-rating:active {
   background-color: #F2F2F2;
   color: #000000;
 }
@@ -349,7 +349,7 @@ border: 3px solid #83B3D3;
   text-transform: capitalize;
 }
 
-.navigation-link-current::before {
+.navigation-link-html::before {
   position: absolute;
   bottom: 0;
   top: 65px;
@@ -413,16 +413,21 @@ border: 3px solid #83B3D3;
   margin: 0 auto;
 }
 
+.header-block {
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/pictures-html/divider.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 1200px;
+  height: 485px;
+}
+
 .logo {
   display: block;
   padding-top: 51px;
   margin: 0 auto;
   margin-bottom: 82px;
-}
-
-.header-block {
-  padding: 0;
-  margin: 0;
 }
 
 .advantages-intro {
@@ -510,9 +515,9 @@ border: 3px solid #83B3D3;
 }
 
 .advantages-item {
- display: flex;
- flex-wrap: wrap;
- min-width: 384px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 384px;
 }
 
 .main-advantages {
@@ -534,9 +539,9 @@ border: 3px solid #83B3D3;
 }
 
 .additional-advantages-item {
- display: flex;
- width: 400px;
- min-height: 384px;
+  display: flex;
+  width: 400px;
+  min-height: 384px;
 }
 
 .additional-advantages,
@@ -727,7 +732,7 @@ border: 3px solid #83B3D3;
 }
 
 .footer-social-link:default {
- color: #83B3D3;
+  color: #83B3D3;
 }
 
 .footer-social-link:hover {
@@ -863,7 +868,7 @@ border: 3px solid #83B3D3;
   margin-left: 72px;
 }
 
-.catalog-sorting-group{
+.catalog-sorting-group {
   display: flex;
   margin-top: 50px;
   margin-bottom: 56px;
@@ -1062,7 +1067,7 @@ border: 3px solid #83B3D3;
 .pagination-current:default,
 .pagination-current:hover,
 .pagination-current:focus,
-.pagination-current:active  {
+.pagination-current:active {
   background-color: #F2F2F2;
   color: #000000;
 }
