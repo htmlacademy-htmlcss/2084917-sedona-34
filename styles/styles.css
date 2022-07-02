@@ -61,48 +61,38 @@ body {
   justify-items: center;
   border: none;
   cursor: pointer;
-  padding: 12px 15px;
+  padding: 9px 15px;
 }
 
-.button:hover {
-  background-color: #615048;
-}
-
-.button:focus {
-  outline: 2px solid #dbb590;
-  background-color: #4e2e0e;
-}
-
-.button:active {
-  background-color: #756157;
-}
-
-.button:disabled {
-  background-color: #E5E5E5;
-}
-
-/* .button:disabled:hover {
-  background-color: #595959;
-  outline: none;
-  cursor: default;
-} */
-
-
+/* Кнопка хочу сюда */
 .button-navigation {
   margin-top: 14px;
   margin-bottom: 14px;
   margin-left: 20px;
   padding: 9px 15px 8px;
   display: block;
+  border: none;
 }
 
-.button-newsletter {
-  width: 200px;
-  font-size: 20px;
-  line-height: 36px;
-  background-color: #82B3D3;
+.button-navigation:hover,
+.button-navigation:focus {
+  background-color: #615048;
 }
 
+.button-navigation:default {
+  background-color: #756157;
+}
+
+.button-navigation:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-navigation:disabled {
+  background-color: #E5E5E5;
+}
+
+/* Кнопка поиска */
 .button-search {
   width: 574px;
   padding: 12px 15px;
@@ -110,14 +100,81 @@ body {
   line-height: 36px;
 }
 
-.button-accept {
+.button-search:hover,
+.button-search:focus {
+  background-color: #615048;
+}
+
+.button-search:default {
+  background-color: #756157;
+}
+
+.button-search:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-search:disabled {
+  background-color: #E5E5E5;
+}
+
+/* Кнопка подписаться */
+.button-newsletter {
+  width: 200px;
+  font-size: 20px;
+  line-height: 36px;
   background-color: #82B3D3;
+}
+
+
+
+.button-newsletter:default {
+  background-color: #82B3D3;
+}
+
+.button-newsletter:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-newsletter:hover,
+.button-newsletter:focus {
+  background-color: #68A2CA;
+}
+
+.button-newsletter:disabled {
+  background-color: #E5E5E5;
+}
+
+/* Кнопка применить */
+
+.button-accept {
   padding: 14px 15px;
   width: 160px;
   height: 48px;
   margin-bottom: 20px;
+  background-color: #82B3D3;
 }
 
+.button-accept:default {
+  background-color: #82B3D3;
+}
+
+.button-accept:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-accept:hover,
+.button-accept:focus {
+  background-color: #68A2CA;
+}
+
+.button-accept:disabled {
+  background-color: #E5E5E5;
+}
+
+/* Кнопка сбросить */
 .button-cancel {
   font-weight: 400;
   text-transform: none;
@@ -127,9 +184,27 @@ body {
   height: 48px;
 }
 
-.button-pictures,
-.button-slideshow,
-.button-list {
+.button-cancel:hover {
+  color: #FFFFFF;
+  Opacity: 60%
+}
+
+.button-cancel:focus {
+border: 3px solid #83B3D3;
+}
+
+.button-cancel:default {
+  color: #FFFFFF;
+}
+
+.button-cancel:active {
+  color: #FFFFFF;
+  Opacity: 30%;
+}
+
+
+/* карточки в сортировке */
+.position-card {
   color: #000000;
   background-color: #ffffff;
   width: 48px;
@@ -139,19 +214,98 @@ body {
   height: 48px;
 }
 
-.button-additional {
-  background: #82B3D3;
+.position-card svg {
+  fill: #ffffff;
 }
 
-.button-selected {
-  background: #7DB54F;
+.position-card:default svg{
+  border: 2px solid #E5E5E5;
 }
 
+.position-card:hover:active svg {
+  border-top: 2px #000000;
+}
+
+.position-card:focus svg {
+  border: 2px #68A2CA;
+}
+
+.button-main:hover,
+.button-main:focus {
+  background-color: #615048;
+}
+
+.button-main:default {
+  background-color: #756157;
+}
+
+.button-main:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-main:disabled {
+  background-color: #E5E5E5;
+}
+
+/* Кнопка в избранное */
+
+.button-additional:hover,
+.button-additional:focus {
+  background-color: #68A2CA;
+}
+
+.button-additional:default {
+  background-color: #82B3D3;
+}
+
+.button-additional:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-additional:disabled {
+  background-color: #E5E5E5;
+}
+
+
+
+/* Зеленая кнопка */
+
+.button-selected:default {
+  background-color: #7DB54F;
+}
+
+.button-selected:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-selected:hover,
+.button-selected:focus {
+  background-color: #6C9E42;
+}
+
+.button-selected:disabled {
+  background: #E5E5E5;
+}
+
+/* кнопка рейтинг */
 .button-rating {
   font-weight: 400;
   color: #333333;
   background-color: #F2F2F2;
 }
+
+.button-rating:default,
+.button-rating:hover,
+.button-rating:focus,
+.button-rating:active  {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+
 
 .page-header {
   color: #000000;
@@ -775,12 +929,14 @@ body {
 }
 
 .button-selected {
+  background-color: #7DB54F;
   display: grid;
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
 
 .button-additional {
+  background: #82B3D3;
   display: grid;
   grid-column: 2 / 3;
   grid-row: 4 / 5;
@@ -860,12 +1016,38 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
+  text-align: center;
+}
+
+.pagination-link:default,
+.pagination-link:active {
+  background-color: #82B3D3;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-link:focus,
+.pagination-link:hover {
+  background-color: #68A2CA;
 }
 
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
 }
+
+.pagination-current:default,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active  {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+
 
 .hotels-amount {
   padding-top: 5px;
