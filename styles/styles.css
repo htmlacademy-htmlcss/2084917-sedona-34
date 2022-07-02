@@ -349,6 +349,24 @@ border: 3px solid #83B3D3;
   text-transform: capitalize;
 }
 
+.navigation-link-current::before {
+  position: absolute;
+  bottom: 0;
+  top: 65px;
+  width: 68px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation-link-catalog::before {
+  position: absolute;
+  bottom: 0;
+  top: 65px;
+  width: 93px;
+  background-color: #756257;
+  content: "";
+}
+
 .navigation-user {
   max-width: 270px;
   margin-right: 70px;
@@ -959,6 +977,8 @@ border: 3px solid #83B3D3;
 
 .hotel-rating-4 {
   grid-area: hotel-rating-4;
+  background-image: url(../images/pictures-catalog/icon-hotel-star.svg);
+
 }
 
 .hotel-rating-3 {
