@@ -228,27 +228,6 @@ body {
   height: 48px;
 }
 
-.position-card svg {
-  fill: #ffffff;
-}
-
-.position-card:default svg {
-  border: 2px solid #E5E5E5;
-}
-
-.position-card:hover:active svg {
-  border-top: 2px #000000;
-}
-
-.position-card:focus svg {
-  border: 2px #68A2CA;
-}
-
-.position-card:disabled {
-  background-color: #E5E5E5;
-  color: #ffffff;
-}
-
 .button-main:hover,
 .button-main:focus {
   background-color: #615048;
@@ -450,24 +429,24 @@ body {
 }
 
 
-.navigation-link-favourites:hover svg{
+.navigation-link-favourites:hover svg {
   fill: #756157;
 }
 
-.navigation-link-favourites:active svg{
- fill: #756157;
+.navigation-link-favourites:active svg {
+  fill: #756157;
   opacity: 30%;
 }
 
-.navigation-link-favourites:focus svg{
+.navigation-link-favourites:focus svg {
   fill: #756157;
 }
 
-.navigation-link-favourites:default svg{
+.navigation-link-favourites:default svg {
   fill: #000000;
 }
 
-.navigation-link-favourites:disabled svg{
+.navigation-link-favourites:disabled svg {
   background-color: #E5E5E5;
   fill: #ffffff;
 }
@@ -638,8 +617,6 @@ body {
   padding: 103px 85px;
 }
 
-.additional-advantages,
-.additional-advantages,
 .additional-advantages {
   padding: 182px 85px 81px;
 }
@@ -991,13 +968,17 @@ body {
   display: flex;
   width: 1056px;
   flex-direction: column;
+  margin-top: 64px;
   margin-left: 72px;
 }
 
 .catalog-sorting-group {
   display: flex;
-  margin-top: 50px;
   margin-bottom: 56px;
+}
+
+.catalog-sorting {
+  display: flex;
 }
 
 .hotels-results {
@@ -1008,21 +989,29 @@ body {
   color: #000000;
   background-color: #ffffff;
   margin: 0;
+  margin-right: 191px;
+  width: 338px;
+
 }
 
 .select-control {
+  display: block;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin-left: auto;
+  width: 290px;
+  height: 49px;
+  padding-left: 20px;
+  margin: 0;
+  margin-right: 78px;
 }
 
 .select-control:hover,
 .select-control:focus {
-color: #000000;
-border: 2px solid #68A2CA;
+  color: #000000;
+  border: 2px solid #68A2CA;
 }
 
 .select-control:active {
@@ -1038,6 +1027,42 @@ border: 2px solid #68A2CA;
 .select-control:disabled {
   color: rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.card-toggle-group {
+display: flex;
+margin: 0;
+}
+
+.card-toggle {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+}
+
+.card-toggle:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card-toggle svg {
+  fill: #000000;
+}
+
+.card-toggle:default svg {
+  border: 2px solid #E5E5E5;
+}
+
+.card-toggle:hover:active svg {
+  border-top: 2px #000000;
+}
+
+.card-toggle:focus svg {
+  border: 2px #68A2CA;
+}
+
+.card-toggle:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .hotels-list {
