@@ -415,20 +415,20 @@ body {
 }
 
 .navigation-link-search:hover {
-  color: #756157;
+  fill: #756157;
 }
 
 .navigation-link-search:active {
-  color: #756157;
+  fill: #756157;
   opacity: 30%;
 }
 
 .navigation-link-search:focus {
-  color: #756157;
+  fill: #756157;
 }
 
 .navigation-link-search:default {
-  color: #000000;
+  fill: #000000;
 }
 
 .navigation-link-search:disabled {
@@ -437,24 +437,24 @@ body {
 }
 
 
-.navigation-link-favourites:hover svg {
+.navigation-link-favourites:hover {
   fill: #756157;
 }
 
-.navigation-link-favourites:active svg {
+.navigation-link-favourites:active {
   fill: #756157;
   opacity: 30%;
 }
 
-.navigation-link-favourites:focus svg {
+.navigation-link-favourites:focus {
   fill: #756157;
 }
 
-.navigation-link-favourites:default svg {
+.navigation-link-favourites:default {
   fill: #000000;
 }
 
-.navigation-link-favourites:disabled svg {
+.navigation-link-favourites:disabled {
   background-color: #E5E5E5;
   fill: #ffffff;
 }
@@ -803,18 +803,16 @@ body {
   display: block;
   width: 48px;
   height: 40px;
+  fill: #83B3D3;
 }
 
+.footer-social-link:focus,
 .footer-social-link:hover {
   fill: #68A2CA;
 }
 
 .footer-social-link:active {
   fill: rgba(104, 162, 202, 0.3);
-}
-
-.footer-social-link:focus {
-  fill: #68A2CA;
 }
 
 .footer-social-link:default {
@@ -856,21 +854,21 @@ body {
   color: #ffffff;
 }
 
-.htmlacademy-link:default {
-  color: #000000;
-}
-
 .htmlacademy-link:hover {
-  color: #756157;
+  fill: #756157;
 }
 
 .htmlacademy-link:active {
-  color: #756157;
+  fill: #756157;
   opacity: 30%;
 }
 
 .htmlacademy-link:focus {
-  color: #756157;
+  fill: #756157;
+}
+
+.htmlacademy-link:default {
+  fill: #000000;
 }
 
 .htmlacademy-link:disabled {
