@@ -139,8 +139,8 @@ body {
   padding: 12px 15px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .button-newsletter:default {
@@ -203,7 +203,7 @@ body {
 
 .button-cancel:hover {
   color: #ffffff;
-  Opacity: 60%
+  opacity: 60%
 }
 
 .button-cancel:focus {
@@ -216,7 +216,7 @@ body {
 
 .button-cancel:active {
   color: #ffffff;
-  Opacity: 30%;
+  opacity: 30%;
 }
 
 .button-cancel:disabled {
@@ -284,27 +284,6 @@ body {
   color: #ffffff;
 }
 
-/* кнопка рейтинг */
-.button-rating {
-  font-weight: 400;
-  color: #333333;
-  background-color: #F2F2F2;
-  padding: 9px 22px;
-}
-
-.button-rating:default,
-.button-rating:hover,
-.button-rating:focus,
-.button-rating:active {
-  background-color: #F2F2F2;
-  color: #000000;
-}
-
-.button-rating:disabled {
-  background-color: #E5E5E5;
-  color: #ffffff;
-}
-
 .page-header {
   color: #000000;
   background-color: #ffffff;
@@ -366,8 +345,7 @@ body {
 }
 
 .navigation-link:disabled {
-  background-color: #E5E5E5;
-  color: #ffffff;
+  color: #E5E5E5;
 }
 
 .navigation-link-html::before {
@@ -427,8 +405,7 @@ body {
 }
 
 .navigation-link-search:disabled svg{
-  background-color: #E5E5E5;
-  color: #ffffff;
+  fill: #E5E5E5;
 }
 
 .navigation-link-favourites {
@@ -455,8 +432,7 @@ body {
 }
 
 .navigation-link-favourites:disabled svg{
-  background-color: #E5E5E5;
-  fill: #ffffff;
+  fill: #E5E5E5;
 }
 
 .favourites-amount {
@@ -843,8 +819,7 @@ body {
 }
 
 .footer-social-link:disabled svg{
-  background-color: #E5E5E5;
-  fill: #ffffff;
+  fill: #E5E5E5;
 }
 
 .footer-contacts-phone {
@@ -873,8 +848,7 @@ body {
 }
 
 .footer-contacts-phone:disabled {
-  background-color: #E5E5E5;
-  color: #ffffff;
+  color: #E5E5E5;
 }
 
 .htmlacademy-link:hover svg{
@@ -895,8 +869,7 @@ body {
 }
 
 .htmlacademy-link:disabled svg{
-  background-color: #E5E5E5;
-  color: #ffffff;
+  fill: #E5E5E5;
 }
 
 .page-container-catalog {
@@ -972,6 +945,7 @@ body {
 .breadcrumbs-link:disabled {
   color: #E5E5E5;
 }
+
 .breadcrumbs-link-index {
   fill: #ffffff;
   display: block;
@@ -1098,7 +1072,6 @@ body {
   margin: 0;
   margin-right: 191px;
   width: 338px;
-
 }
 
 .select-control {
@@ -1179,7 +1152,7 @@ body {
 
 .card-toggle:disabled {
   border-color: #E5E5E5;
-  fill: #ffffff;
+  fill: #E5E5E5;
 }
 
 .hotel-block {
@@ -1382,11 +1355,6 @@ body {
   border-radius: 4px;
 }
 
-.pagination-link:default,
-.pagination-link:active {
-  background-color: #82B3D3;
-}
-
 .pagination-link:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
@@ -1397,29 +1365,47 @@ body {
   background-color: #68A2CA;
 }
 
+.pagination-link:default {
+  background-color: #82B3D3;
+}
+
 .pagination-link:disabled {
   background-color: #E5E5E5;
   color: #ffffff;
 }
 
-.pagination-current {
+.pagination-link-current {
   color: #000000;
   background-color: #F2F2F2;
-}
-
-.pagination-current:hover,
-.pagination-current:active,
-.pagination-current:focus,
-.pagination-current:default {
-  background-color: #F2F2F2;
-  color: #000000;
   cursor: pointer;
 }
 
-.pagination-current:disabled {
+.pagination-link-current:hover {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-link-current:active {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-link-current:focus {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-link-current:default {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-link-current:disabled {
   background-color: #E5E5E5;
   color: #ffffff;
 }
+
+
 
 .hotels-amount {
   padding-top: 5px;
