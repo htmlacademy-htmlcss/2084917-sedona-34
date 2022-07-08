@@ -730,14 +730,59 @@ img {
 
 .field {
   width: 600px;
+  margin: 0;
+  padding: 20px 22px;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
+  border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.field:hover {
+  background-color:  #E6E6E6;
+}
+.field:active {
+background-color: #ffffff;
+border: 2px solid #000000;
+}
+
+.field:focus {
+  border: 3px solid #83B3D3;
+}
+
+.field:default {
+  background-color: #F2F2F2;
+}
+
+.field:disabled {
+  color: #ffffff;
+  background-color: #E5E5E5;
+}
+
+.field:invalid {
+  border: none;
+  outline: none;
+}
+
+.field:focus:invalid {
+  border: none;
+  outline: none;
+  background-color: #FF5757;
+}
+
+.field::placeholder {
+  color: #000000;
+  opacity: 60%;
+}
+
+.field:focus-visible {
+  border: none;
+  outline: 3px solid #83B3D3;
 }
 
 .page-footer-container {
