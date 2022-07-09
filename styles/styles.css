@@ -907,10 +907,12 @@ img {
 }
 
 .catalog-filter-group {
+  border: none;
+  margin-right: 70px;
   margin: 0;
   padding: 0;
-  border: none;
 }
+
 
 .catalog-filter-list {
   list-style-type: none;
@@ -923,20 +925,44 @@ img {
   font-size: 20px;
   line-height: 26px;
   text-transform: none;
-  margin-top: 0;
-  padding-bottom: 30px;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 30px;
 }
 
 .control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  padding-bottom: 16px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-transform: none;
 }
 
-.catalog-filter-price-group{
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  content: url("../images/pictures-catalog/icon-tick.svg");
+  height: 10px;
+  width: 13px;
+  top: -5px;
+  left: 3px;
+  /* background-position: center; */
+}
+
+.catalog-filter-price-group {
   margin: 0;
   margin-right: 70px;
   padding: 0;
@@ -988,7 +1014,7 @@ img {
 
 .range-input:focus {
   border: 2px solid #ffffff;
-  box-shadow:  0 0 0 3px #81B3D2, inset 0 0 0 3px #81B3D2;
+  box-shadow: 0 0 0 3px #81B3D2, inset 0 0 0 3px #81B3D2;
 }
 
 .range-input:disabled {
