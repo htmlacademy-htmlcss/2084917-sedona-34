@@ -942,6 +942,7 @@ img {
   position: relative;
   display: block;
   padding-left: 40px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -984,6 +985,49 @@ img {
   border-radius: 50%;
   content: "";
 }
+
+.control:hover .control-mark{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:active .control-mark{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px solid #83B3D3;
+}
+
+.control:default .control-mark {
+  background-color: #ffffff;
+}
+
+.control-radio:hover .control-mark{
+  background-color: #ffffff;
+}
+
+.control-radio:active .control-mark{
+  background-color: #ffffff;
+}
+
+.control-radio:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px solid #83B3D3;
+}
+
+.control-radio:default .control-mark {
+  background-color: #ffffff;
+}
+
+.control-input:focus-visible + .control-mark {
+  border: 3px solid #000000;
+}
+
+.control-input:disabled + .control-mark {
+  background-color: #E5E5E5;
+}
+
 
 .catalog-filter-price-group {
   margin: 0;
@@ -1524,7 +1568,8 @@ img {
 .hotels-amount {
   display: flex;
   width: 387px;
-  margin: 0;
+  margin-left: auto;
+  border: none;
 }
 
 .hotels-amount-title{
