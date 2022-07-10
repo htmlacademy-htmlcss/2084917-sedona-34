@@ -252,65 +252,53 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-view-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
-              <label class="arrival-date" for="arrival-date">Дата Заезда:</label>
-              <input class="modal-view-field field" type="text" id="depature-form" name="depature-form"
+              <label class="arrival-date title-label" for="arrival-date">Дата Заезда:</label>
+              <input class="modal-view-field" type="text" id="arrival-date" name="arrival-date"
                 placeholder="27 апреля 2020">
-              <button class="book-date" type="button">
+              <button class="button button-book-date" type="button">
                 <span class="visually-hidden">Календарь</span>
               </button>
             </div>
             <p class="text-after-arrival">Мы не можем отправить вас в прошлое.</p>
             <div class="field-group">
-              <label class="departure date" for="depature-date">Дата Выезда:</label>
-              <input class="modal-view-field field" type="text" id="depature-form" name="depature-form"
+              <label class="departure date title-label" for="departure-date">Дата Выезда:</label>
+              <input class="modal-view-field" type="text" id="departure-date" name="departure-date"
                 placeholder="1 сентября 2021">
-              <button class="book-date" type="button">
+              <button class="button button-book-date" type="button">
                 <span class="visually-hidden">Календарь</span>
               </button>
             </div>
-            <p class="text-after-depature">На эти даты есть свободные номера. Пока есть.</p>
+            <p class="text-after-departure">На эти даты есть свободные номера. Пока есть.</p>
 
             <div class="field-group">
-              <label class="label-field" for="adults">Взрослые:</label>
+              <label class="label-field title-label" for="adults">Взрослые:</label>
               <button class="button button-minus" type="button">
                 <span class="visually-hidden">Минус</span>
               </button>
-              <input class="label-field-amount" type="number" id="adults-amount" name="adults-amount" value="2">
+              <input class="field-amount" type="number" id="adults-amount" name="adults-amount" value="2">
               <button class="button button-minus" type="button">
                 <span class="visually-hidden">Плюс</span>
               </button>
             </div>
 
             <div class="field-group">
-              <label class="label-field" for="child">Дети:</label>
+              <label class="label-field title-label" for="child">Дети:</label>
               <button class="button button-minus" type="button">
                 <span class="visually-hidden">Минус</span>
               </button>
-              <input class="label-field-amount" type="number" id="child-amount" name="child-amount" value="1">
-              <button class="button button-minus" type="button">
+              <input class="field-amount" type="number" id="child-amount" name="child-amount" value="1">
+              <button class="button button-plus" type="button">
                 <span class="visually-hidden">Плюс</span>
               </button>
             </div>
 
             <span class="tooltip">
-              <span class="text" role="tooltip" id="tooltip-child">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              <span class="tooltip-text" role="tooltip" id="tooltip-child">Укажите количество детей, которые будут с
+                вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
             </span>
 
             <button class="button button-search-hotels" type="submit">Найти</button>
 
-
-
-
-            <!-- <div class="field-group modal-view-form-user-options">
-          <label class="modal-view-form-checkbox control">
-            <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
-            <span class="control-mark"></span>
-            <span class="control-label">Запомнить меня</span>
-          </label>
-          <a class="modal-view-form-recovery" href="#">Забыл пароль</a>
-        </div>
-        <button class="button modal-view-form-button" type="submit">Войти</button>
-        <a class="button modal-view-form-register" href="#">Регистрация</a> -->
           </form>
         </section>
       </div>
