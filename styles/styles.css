@@ -641,6 +641,7 @@ img {
   color: #000000;
   background-color: #ffffff;
   background-image: none;
+  margin: 0;
 }
 
 .field {
@@ -984,11 +985,11 @@ img {
   content: "";
 }
 
-.control:hover .control-mark{
+.control:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:active .control-mark{
+.control:active .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -996,11 +997,11 @@ img {
   background-color: #ffffff;
 }
 
-.control-radio:hover .control-mark{
+.control-radio:hover .control-mark {
   background-color: #ffffff;
 }
 
-.control-radio:active .control-mark{
+.control-radio:active .control-mark {
   background-color: #ffffff;
 }
 
@@ -1026,24 +1027,35 @@ img {
 }
 
 .range-inputs-container {
+  position: relative;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-label {
-  vertical-align: top;
+  position: absolute;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-transform: none;
   color: rgba(255, 255, 255, 0.3);
-  text-align: end;
+}
+
+.label-min-price {
+  padding: 16px 15px 15px 113px;
+  z-index: 1;
+
+}
+
+.label-max-price {
+  padding: 16px 15px 15px 251px;
+  z-index: 2;
 }
 
 .range-input {
   display: flex;
   box-sizing: border-box;
-  width: 144px;
+  width: 288px;
   padding: 14px 14px 14px 19px;
   color: #ffffff;
   font: inherit;
@@ -1053,10 +1065,12 @@ img {
 }
 
 .range-input-min {
+  width: 144px;
   border-radius: 4px 0 0 4px;
 }
 
 .range-input-max {
+  width: 144px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -1559,7 +1573,7 @@ img {
   border: none;
 }
 
-.hotels-amount-title{
+.hotels-amount-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
