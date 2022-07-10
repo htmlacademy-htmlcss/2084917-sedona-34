@@ -662,14 +662,13 @@ img {
   background-color: #E6E6E6;
 }
 
+.field:focus {
+  border: 3px solid #83B3D3;
+}
+
 .field:active {
   background-color: #ffffff;
   border: 2px solid #000000;
-
-}
-
-.field:focus {
-  border: 3px solid #83B3D3;
 }
 
 .field:default {
@@ -681,14 +680,13 @@ img {
   background-color: #E5E5E5;
 }
 
-/* .input:invalid {
+.field:invalid {
   box-shadow: none;
 }
 
-.input:invalid {
+.field:focus:invalid {
   border-color: #ea5454;
-} */
-
+}
 
 .field::placeholder {
   color: #000000;
@@ -994,11 +992,6 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.control:focus .control-mark {
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 3px solid #83B3D3;
-}
-
 .control:default .control-mark {
   background-color: #ffffff;
 }
@@ -1011,37 +1004,34 @@ img {
   background-color: #ffffff;
 }
 
-.control-radio:focus .control-mark {
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 3px solid #83B3D3;
-}
-
 .control-radio:default .control-mark {
   background-color: #ffffff;
 }
 
-.control-input:focus-visible + .control-mark {
-  border: 3px solid #000000;
+.control-input:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px solid #83B3D3;
 }
 
 .control-input:disabled + .control-mark {
   background-color: #E5E5E5;
 }
 
-
 .catalog-filter-price-group {
   margin: 0;
   padding: 0;
+  width: 288px;
   margin-right: 70px;
   border: none;
 }
 
 .range-inputs-container {
   display: flex;
-  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .catalog-filter-label {
+  vertical-align: top;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1109,13 +1099,12 @@ img {
   line-height: 21px;
 }
 
-/* range */
 .range-scale {
   position: relative;
   border-bottom: 4px solid rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
   width: 288px;
   height: 0;
+  margin-bottom: 8px;
 }
 
 .range-bar {
@@ -1123,7 +1112,6 @@ img {
   width: 228px;
   border-bottom: 4px solid #ffffff;
   height: 0;
-  margin-top: 32px;
 }
 
 .range-toggle {
@@ -1210,8 +1198,7 @@ img {
   line-height: 21px;
   color: #333333;
   width: 290px;
-  height: 49px;
-  padding: 14px 20px 14px;
+  padding: 14px 20px;
   padding-right: 97px;
   margin: 0;
   margin-right: 78px;
