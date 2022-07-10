@@ -73,7 +73,6 @@ img {
   border-radius: 4px;
 }
 
-/* Кнопка хочу сюда */
 .button-navigation {
   display: block;
   border: none;
@@ -139,17 +138,20 @@ img {
   border-bottom-left-radius: 0;
 }
 
+.button-search-hotels:hover,
 .button-newsletter:hover,
 .button-newsletter:focus {
   background-color: #68A2CA;
 }
 
+.button-search-hotels:active,
 .button-newsletter:active {
   background-color: #82B3D3;
   color: #ffffff;
   opacity: 30%;
 }
 
+.button-search-hotel:default,
 .button-newsletter:default {
   background-color: #82B3D3;
 }
@@ -209,8 +211,9 @@ img {
   opacity: 30%;
 }
 
-.button-accept,
-.button-newsletter,
+.button-search-hotels:disabled,
+.button-accept:disabled,
+.button-newsletter:disabled,
 .button-search:disabled {
   background-color: #E5E5E5;
   color: #ffffff;
@@ -681,14 +684,6 @@ img {
   background-color: #E5E5E5;
 }
 
-.field:invalid {
-  box-shadow: none;
-}
-
-.field:focus:invalid {
-  border-color: #ea5454;
-}
-
 .field::placeholder {
   color: #000000;
   opacity: 60%;
@@ -814,10 +809,11 @@ img {
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+  width: 715px;
 }
 
 .modal-view {
-  width: 715px;
+  width: 578px;
 }
 
 .modal-close-button {
@@ -827,12 +823,13 @@ img {
   right: 70px;
   width: 53px;
   height: 53px;
-  background-color: #ffffff;
-  border: none;
   background-image: url("../images/pictures-html/icon-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  background-color: #F2F2F2;
+  border-radius: 50px;
+  border: 3px solid transparent;
 }
 
 .modal-title {
@@ -848,43 +845,20 @@ img {
   margin-left: 68px; */
 }
 
-.modal-view-form .field-group {
-  margin: 0;
-  margin-bottom: 16px;
+.button-search-hotels {
+  width: 575px;
+  background-color: #83B3D3;
+  padding: 12px 26px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border: 3px solid transparent;
 }
 
-.modal-view-user-options {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 400;
-}
-
-.modal-view-form-user-options .control-label {
-  font-weight: 400;
-}
-
-.modal-view-form .field {
-  width: 328px;
-}
-
-.modal-view-form-recovery {
-  line-height: 22px;
-  color: #000000;
-}
-
-.modal-view-form-button {
-  width: 360px;
-  margin-bottom: 16px;
-}
-
-.modal-view-form .button + .button {
-  margin: 0;
-}
-
-.modal-view-form-register {
-  width: 360px;
-  color: #000000;
-  background-color: #ffffff;
+.button-search-hotels:focus {
+  border-color: #756257;
 }
 
 .modal-container-close {
