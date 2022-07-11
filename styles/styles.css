@@ -651,7 +651,7 @@ img {
   width: 600px;
   margin: 0;
   padding: 20px 22px;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -858,7 +858,6 @@ background-color: #E6E6E6;
 
 .modal-title {
   margin: 0;
-  margin-bottom: 24px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -879,12 +878,31 @@ background-color: #E6E6E6;
   text-transform: capitalize;
 }
 
+.arrival-date {
+display: flex;
+  margin-right: 42px;
+
+}
+.departure-date {
+  display: flex;
+  margin-right: 36px;
+}
+
+.label-field-adults {
+  margin-right: 64px;
+}
+
+.label-field-child {
+  margin-right: 43px;
+}
+
 .field-group {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .modal-view-field {
-  width: 420px;
+  width: 405px;
   background-color: #F2F2F2;
   border: 2px solid transparent;
   padding: 15px 19px;
@@ -926,23 +944,89 @@ opacity: 60%;
   color: #000000;
 }
 
-
-.field-amount {
-  width: px;
-  appearance: textfield;
-
-}
-
 .button-book-date {
+  display: flex;
   background-image: url("../images/pictures-html/icon-calendar.svg");
   background-repeat: no-repeat;
   background-color: #F2F2F2;
+  background-position: center;
   border: none;
   border-radius: 0 4px 4px 0;
-  background-position: center;
-  width: 18px;
+  width: 15px;
+  margin-right: 17px;
+  cursor: pointer;
+  padding: 18px 17px;
 }
 
+/* .number-group {
+  display: flex;
+  width: 575px;
+} */
+
+.field-amount {
+  position: relative;
+  display: flex;
+  width: 107px;
+  appearance: textfield;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  border: 2px solid transparent;
+}
+
+.button-minus svg{
+position: absolute;
+  display: flex;
+  width: 13px;
+  height: 13px;
+  background-color: transparent;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  color: #000000;
+  opacity: 30%;
+}
+
+.button-plus svg{
+position: absolute;
+  display: flex;
+  background-color: transparent;
+  border-radius: 0 4px 4px 0;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  color: #000000;
+  opacity: 30%;
+}
+
+.button-minus:hover,
+.button-plus:hover {
+  fill: #000000;
+}
+
+.button-minus:active,
+.button-plus:active {
+  fill: #000000;
+  opacity: 20%;
+}
+
+.button-minus:focus,
+.button-plus:focus {
+  color: #000000;
+  border: 3px solid #83B3D3;
+}
+
+.button-minus:default,
+.button-plus:default {
+  fill: #000000;
+  opacity: 30%;
+}
+
+.button-minus:disabled,
+.button-plus:disabled {
+  fill: #E5E5E5;
+}
 
 .text-after-arrival,
 .text-after-departure {
@@ -958,15 +1042,68 @@ opacity: 60%;
   color: #FF5757;
 }
 
+/* .field-group-tooltip {
+  display: flex;
+} */
+
+.tooltip {
+  position: absolute;
+  width: 256px;
+  height: 143px;
+}
+
+.tooltip-button {
+  display: block;
+  background-image: url("../images/pictures-html/icon-info.svg");
+  background-repeat: no-repeat;
+  background-color: #83B3D3;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  cursor: help;
+  margin-left: 54px;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  content: url("../images/pictures-html/icon-triangle.svg");
+  width: 19px;
+  height: 9px;
+  top: -15px;
+  left: 45%;
+}
+
+.tooltip-button:hover {
+  background-color: #68A2CA;
+}
+
+.tooltip-button:default {
+  background-color: #83B3D3;
+}
+
 .tooltip-text {
+  position: absolute;
   font-family: inherit;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: none;
-  text-align: center;
   color: #ffffff;
+  padding: 15px 18px 18px 18px;
+  background-color: #333333;
+  width: 216px;
+  height: 110px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
+  margin-top: 14px;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
 }
+
 
 .button-search-hotels {
   width: 575px;
