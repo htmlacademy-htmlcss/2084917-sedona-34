@@ -245,7 +245,7 @@
 
     <div class="modal-container">
       <div class="modal modal-view">
-        <button class="modal-close-button" type="submit">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -274,21 +274,15 @@
 
             <div class="field-group">
               <label class="label-field  label-field-adults title-label" for="adults">Взрослые:</label>
-              <button class="button-minus" type="button">
-                <span class="visually-hidden">Минус</span>
-                <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0v1h13V0H0Z" />
-                </svg>
-              </button>
               <input class="field-amount" type="number" id="adults-amount" name="adults-amount" value="2">
-              <button class="button-plus" type="button">
+              <button class="button-minus-adults" type="button">
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <button class="button-plus-adults" type="button">
                 <span class="visually-hidden">Плюс</span>
-                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                </svg>
               </button>
 
-              <div class="field-group field-group-tooltip">
+              <div class="field-group">
                 <label class="label-field label-field-child title-label" for="child">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-button" type="button" aria-labelledby="tooltip-label"></button>
@@ -296,30 +290,16 @@
                     вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </span>
                 </span>
-                <button class="button-minus" type="button">
+                <input class="field-amount field-amonut-child" type="number" id="child-amount" name="child-amount" value="1">
+                <button class="button-minus-child" type="button">
                   <span class="visually-hidden">Минус</span>
-                  <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0v1h13V0H0Z" />
-                  </svg>
                 </button>
-                <input class="field-amount" type="number" id="child-amount" name="child-amount" value="1">
-                <button class="button-plus" type="button">
+                <button class="button-plus-child" type="button">
                   <span class="visually-hidden">Плюс</span>
-                  <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                  </svg>
                 </button>
 
               </div>
             </div>
-
-
-            <span class="label-field">
-
-
-
-            </span>
-
 
             <button class="button button-search-hotels" type="submit">Найти</button>
 
