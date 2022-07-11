@@ -903,11 +903,12 @@ img {
 
 .modal-view-field {
   position: relative;
+  display: block;
   width: 405px;
   background-color: #F2F2F2;
   border: 2px solid transparent;
   padding: 15px 19px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -950,6 +951,21 @@ img {
   color: #000000;
 }
 
+.button-book-date {
+  position: absolute;
+  background-image: url("../images/pictures-html/icon-calendar.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  border: none;
+  border-radius: 4px;
+  width: 15px;
+  cursor: pointer;
+  padding: 26px 17px;
+  right: 89px;
+}
+
+
 .text-after-arrival,
 .text-after-departure {
   position: absolute;
@@ -959,7 +975,7 @@ img {
   font-weight: 400;
   color: #333333;
   text-transform: none;
-  margin-left: 140px;
+  left: 222px;
   margin-top: 60px;
 }
 
@@ -967,19 +983,7 @@ img {
   color: #FF5757;
 }
 
-.button-book-date {
-  display: flex;
-  background-image: url("../images/pictures-html/icon-calendar.svg");
-  background-repeat: no-repeat;
-  background-color: #F2F2F2;
-  background-position: center;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  width: 15px;
-  margin-right: 17px;
-  cursor: pointer;
-  padding: 18px 17px;
-}
+
 
 .field-amount {
   position: relative;
