@@ -834,7 +834,7 @@ img {
 }
 
 .modal-close-button:hover {
-background-color: #E6E6E6;
+  background-color: #E6E6E6;
 }
 
 .modal-close-button:focus {
@@ -879,10 +879,10 @@ background-color: #E6E6E6;
 }
 
 .arrival-date {
-display: flex;
+  display: flex;
   margin-right: 42px;
-
 }
+
 .departure-date {
   display: flex;
   margin-right: 36px;
@@ -902,6 +902,7 @@ display: flex;
 }
 
 .modal-view-field {
+  position: relative;
   width: 405px;
   background-color: #F2F2F2;
   border: 2px solid transparent;
@@ -912,12 +913,17 @@ display: flex;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
+  margin-bottom: 9px;
+}
+
+.modal-view-field::placeholder {
+  color: #000000;
 }
 
 .modal-view-field:hover {
-background-color: #E6E6E6;
-color: #000000;
-opacity: 60%;
+  background-color: #E6E6E6;
+  color: #000000;
+  opacity: 60%;
 }
 
 .modal-view-field:focus {
@@ -944,6 +950,23 @@ opacity: 60%;
   color: #000000;
 }
 
+.text-after-arrival,
+.text-after-departure {
+  position: absolute;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: none;
+  margin-left: 140px;
+  margin-top: 60px;
+}
+
+.text-after-arrival {
+  color: #FF5757;
+}
+
 .button-book-date {
   display: flex;
   background-image: url("../images/pictures-html/icon-calendar.svg");
@@ -958,11 +981,6 @@ opacity: 60%;
   padding: 18px 17px;
 }
 
-/* .number-group {
-  display: flex;
-  width: 575px;
-} */
-
 .field-amount {
   position: relative;
   display: flex;
@@ -974,8 +992,8 @@ opacity: 60%;
   border: 2px solid transparent;
 }
 
-.button-minus svg{
-position: absolute;
+.button-minus svg {
+  position: absolute;
   display: flex;
   width: 13px;
   height: 13px;
@@ -987,8 +1005,8 @@ position: absolute;
   opacity: 30%;
 }
 
-.button-plus svg{
-position: absolute;
+.button-plus svg {
+  position: absolute;
   display: flex;
   background-color: transparent;
   border-radius: 0 4px 4px 0;
@@ -1028,28 +1046,8 @@ position: absolute;
   fill: #E5E5E5;
 }
 
-.text-after-arrival,
-.text-after-departure {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
-  text-transform: none;
-}
-
-.text-after-arrival {
-  color: #FF5757;
-}
-
-/* .field-group-tooltip {
-  display: flex;
-} */
-
 .tooltip {
   position: absolute;
-  width: 256px;
-  height: 143px;
 }
 
 .tooltip-button {
