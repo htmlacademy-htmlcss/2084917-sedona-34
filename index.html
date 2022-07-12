@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   </head>
 
   <body>
@@ -89,7 +90,7 @@
                   <li class="additional-advantages-item icon-accommodation">
                     <div class="additional-advantages">
                       <h4 class="advantages-title">Жилье</h4>
-                      <p class="advantages-description">Рекомендуем пожить в&nbspнастоящем мотеле,<br>всё как в кино!
+                      <p class="advantages-description">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в кино!
                       </p>
                     </div>
                   </li>
@@ -97,7 +98,7 @@
                   <li class="additional-advantages-item">
                     <div class="additional-advantages additional-advantages-food icon-food">
                       <h4 class="advantages-title">Еда</h4>
-                      <p class="advantages-description">Всегда заказывайте топовый&nbspфирменный бургер,<br>вы не
+                      <p class="advantages-description">Всегда заказывайте топовый&nbsp;фирменный бургер,<br>вы не
                         разочаруетесь!</p>
                     </div>
                   </li>
@@ -252,7 +253,7 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-view-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group-arrival">
-              <label class="arrival-date title-label" for="arrival-date">Дата&nbspЗаезда:</label>
+              <label class="arrival-date title-label" for="arrival-date">Дата&nbsp;Заезда:</label>
               <input class="modal-view-field" type="text" id="arrival-date" name="arrival-date"
                 placeholder="27 апреля 2020">
               <button class="button-book-date" type="button">
@@ -260,9 +261,8 @@
               </button>
               <p class="text-after-arrival">Мы не можем отправить вас в прошлое.</p>
             </div>
-
             <div class="field-group-departure">
-              <label class="departure-date title-label" for="departure-date">Дата&nbspВыезда:</label>
+              <label class="departure-date title-label" for="departure-date">Дата&nbsp;Выезда:</label>
               <input class="modal-view-field" type="text" id="departure-date" name="departure-date"
                 placeholder="1 сентября 2021">
               <button class="button-book-date" type="button">
@@ -270,9 +270,8 @@
               </button>
               <p class="text-after-departure">На эти даты есть свободные номера. Пока есть.</p>
             </div>
-
             <div class="field-group-number">
-              <label class="label-field-adults title-label" for="adults">Взрослые:</label>
+              <label class="label-field-adults title-label" for="adults-amount">Взрослые:</label>
               <div class="field-group-adults">
                 <input class="field-amount" type="number" id="adults-amount" name="adults-amount" value="2">
                 <button class="button-minus-adults" type="button">
@@ -282,9 +281,8 @@
                   <span class="visually-hidden">Плюс</span>
                 </button>
               </div>
-
               <div class="tooltip-group">
-                <label class="label-field-child title-label" for="child">Дети:</label>
+                <label class="label-field-child title-label" for="child-amount">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-button" type="button" aria-labelledby="tooltip-label"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
@@ -292,8 +290,7 @@
                   </span>
                 </span>
               </div>
-
-                <div class="field-group-child">
+              <div class="field-group-child">
                 <input class="field-amount" type="number" id="child-amount" name="child-amount" value="1">
                 <button class="button-minus-child" type="button">
                   <span class="visually-hidden">Минус</span>
@@ -304,12 +301,9 @@
               </div>
             </div>
             <button class="button button-search-hotels" type="submit">Найти</button>
+          </form>
+        </section>
       </div>
-
-      </form>
-      </section>
-    </div>
-
     </div>
   </body>
 

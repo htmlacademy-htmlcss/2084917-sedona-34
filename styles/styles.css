@@ -23,6 +23,7 @@ body {
   margin: 0 auto;
   flex-direction: column;
   min-height: 100%;
+  min-width: 1280px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -157,10 +158,13 @@ img {
 }
 
 .button-accept {
+  display: block;
   padding: 14px 15px;
   width: 160px;
-  height: 48px;
+  /* height: 48px; */
   background-color: #82B3D3;
+  margin-bottom: 2px;
+
 }
 
 .button-accept:hover,
@@ -179,13 +183,15 @@ img {
 }
 
 .button-cancel {
+  display: block;
   font-weight: 400;
   text-transform: none;
   background-color: transparent;
   padding: 14px 15px;
   width: 160px;
-  height: 48px;
+  /* height: 48px; */
   border-radius: 4px;
+  border: 3px solid transparent;
 }
 
 .button-cancel:hover {
@@ -464,6 +470,7 @@ img {
 
 .additional-advantages-item {
   display: flex;
+  flex-wrap: wrap;
   width: 400px;
   min-height: 384px;
   margin: 0 auto;
@@ -1227,10 +1234,8 @@ img {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
-
-/*  */
 
 .page-container-catalog {
   width: 1200px;
@@ -1263,6 +1268,7 @@ img {
 .breadcrumbs {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -1693,6 +1699,8 @@ img {
 
 .card-toggle-group {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0;
 }
 
@@ -1708,6 +1716,7 @@ img {
   justify-content: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  margin-bottom: 5px;
 }
 
 .card-toggle:not(:last-child) {
@@ -1953,18 +1962,21 @@ img {
 .pagination-block {
   width: 1056px;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 25px;
 }
 
 .pagination {
   display: flex;
-  margin: 0;
-  padding: 0;
+  /* flex-wrap: wrap; */
+  max-width: 400px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   list-style-type: none;
-  margin-right: 270px;
+  margin: 0;
+  padding: 0;
+  margin-right: 260px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1974,14 +1986,15 @@ img {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
   text-align: center;
   padding: 12px 19px;
   border-radius: 4px;
+  margin-bottom: 5px;
 }
 
 .pagination-link:active {
@@ -2014,7 +2027,7 @@ img {
 
 .hotels-amount {
   display: flex;
-  width: 387px;
+  max-width: 387px;
   margin-left: auto;
   border: none;
 }
