@@ -806,11 +806,11 @@ img {
 .modal {
   position: relative;
   margin: auto;
+  width: 715px;
   padding: 62px 70px 70px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  width: 715px;
 }
 
 .modal-view {
@@ -831,6 +831,7 @@ img {
   background-color: #F2F2F2;
   border-radius: 50px;
   border: 3px solid transparent;
+  margin-bottom: 54px;
 }
 
 .modal-close-button:hover {
@@ -855,7 +856,6 @@ img {
   background-color: #E5E5E5;
 }
 
-
 .modal-title {
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -864,7 +864,14 @@ img {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 63px;
+  margin-bottom: 54px;
+  /* margin-bottom: 63px; */
+}
+
+.field-group-arrival {
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
 }
 
 .title-label {
@@ -877,34 +884,13 @@ img {
 }
 
 .arrival-date {
-  display: flex;
   margin-right: 42px;
-}
-
-.departure-date {
-  display: flex;
-  margin-right: 36px;
-}
-
-.label-field-adults {
-  margin-right: 56px;
-  margin-top: 11px;
-}
-
-.label-field-child {
-  margin-right: 43px;
-  margin-top: 11px;
-}
-
-.field-group {
-  display: flex;
-  margin-bottom: 11px;
+  margin-top: 12px;
 }
 
 .modal-view-field {
-  position: relative;
   display: block;
-  width: 405px;
+  width: 420px;
   background-color: #F2F2F2;
   border: 2px solid transparent;
   padding: 15px 19px;
@@ -914,7 +900,7 @@ img {
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  margin-bottom: 40px;
+  margin: 0;
 }
 
 .modal-view-field::placeholder {
@@ -960,9 +946,10 @@ img {
   border: none;
   border-radius: 4px;
   width: 15px;
+  height: 15px;
   cursor: pointer;
-  padding: 26px 17px;
-  right: 89px;
+  right: 17px;
+  top: 18px;
 }
 
 .text-after-arrival,
@@ -974,13 +961,43 @@ img {
   font-weight: 400;
   color: #333333;
   text-transform: none;
-  left: 222px;
-  margin: 0;
-  margin-top: 60px;
 }
 
 .text-after-arrival {
   color: #FF5757;
+  left: 155px;
+  top: 45px;
+}
+
+.field-group-departure{
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.departure-date {
+  display: flex;
+  margin-right: 36px;
+  margin-top: 12px;
+}
+
+.text-after-departure {
+  left: 155px;
+  top: 45px;
+}
+
+.field-group-number {
+  display: flex;
+}
+
+.field-group-adults {
+  position: relative;
+  display: flex;
+}
+
+.label-field-adults {
+  margin-right: 56px;
+  margin-top: 11px;
 }
 
 .field-amount {
@@ -992,7 +1009,7 @@ img {
   border: 2px solid transparent;
   border-radius: 4px;
   margin-right: 56px;
-  margin-bottom: 40px;
+  margin-bottom: 11px;
   margin-top: 0;
   text-align: center;
   font-family: inherit;
@@ -1003,18 +1020,24 @@ img {
   appearance: textfield;
 }
 
+.any-input::-webkit-outer-spin-button,
+.any-input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
 .button-minus-adults {
   position: absolute;
   background-image: url("../images/pictures-html/icon-minus.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  background-position: center;
   width: 13px;
   height: 13px;
   cursor: pointer;
   left: 222px;
   border: none;
-  margin-top: 28px;
-  margin-left: 19px;
+  top: 403px;
 }
 
 .button-plus-adults {
@@ -1022,6 +1045,7 @@ img {
   background-image: url("../images/pictures-html/icon-plus.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  background-position: center;
   width: 13px;
   height: 13px;
   cursor: pointer;
@@ -1031,61 +1055,14 @@ img {
   margin-left: 19px;
 }
 
-.button-minus-child {
-  position: absolute;
-  background-image: url("../images/pictures-html/icon-minus.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  width: 13px;
-  height: 1px;
-  cursor: pointer;
-  margin-top: 28px;
-  margin-left: 19px;
-  right: 185px;
-  border: none;
+.field-group-child {
+  position: relative;
+  display: flex;
 }
 
-.button-plus-child {
-  position: absolute;
-  background-image: url("../images/pictures-html/icon-plus.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  width: 13px;
-  height: 13px;
-  cursor: pointer;
-  color: #000000;
-  right: 110px;
-  top: 370px;
-  border: none;
-  margin-top: 25px;
-}
-
-.button-minus-adults:hover,
-.button-plus-adults:hover {
-  color: #000000;
-}
-
-.button-minus:active,
-.button-plus-adults:active {
-  color: #000000;
-  opacity: 20%;
-}
-
-.button-minus-adults:focus,
-.button-plus-adults:focus {
-  color: #000000;
-  outline: 3px solid #83B3D3;
-}
-
-.button-minus-adults:default,
-.button-plus-adults:default {
-  color: #000000;
-  opacity: 30%;
-}
-
-.button-minus:disabled,
-.button-plus-adults:disabled {
-  background-color: #E5E5E5;
+.label-field-child {
+  margin-right: 43px;
+  margin-top: 11px;
 }
 
 .tooltip {
@@ -1146,8 +1123,67 @@ img {
   display: none;
 }
 
+.button-minus-child {
+  position: absolute;
+  background-image: url("../images/pictures-html/icon-minus.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  width: 13px;
+  height: 1px;
+  cursor: pointer;
+  margin-top: 28px;
+  margin-left: 19px;
+  right: 185px;
+  border: none;
+}
+
+.button-plus-child {
+  position: absolute;
+  background-image: url("../images/pictures-html/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  color: #000000;
+  right: 110px;
+  top: 370px;
+  border: none;
+  margin-top: 25px;
+}
+
+.button-minus-adults:hover,
+.button-plus-adults:hover {
+  color: #000000;
+}
+
+.button-minus:active,
+.button-plus-adults:active {
+  color: #000000;
+  opacity: 20%;
+}
+
+.button-minus-adults:focus,
+.button-plus-adults:focus {
+  color: #000000;
+  outline: 3px solid #83B3D3;
+}
+
+.button-minus-adults:default,
+.button-plus-adults:default {
+  color: #000000;
+  opacity: 30%;
+}
+
+.button-minus:disabled,
+.button-plus-adults:disabled {
+  background-color: #E5E5E5;
+}
+
 .button-search-hotels {
-  width: 577px;
+  width: 575px;
   background-color: #83B3D3;
   padding: 12px 26px;
   font-size: 20px;
@@ -1165,6 +1201,8 @@ img {
 .modal-container-close {
   display: none;
 }
+
+/*  */
 
 .page-container-catalog {
   width: 1200px;

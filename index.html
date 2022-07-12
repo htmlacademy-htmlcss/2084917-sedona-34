@@ -251,8 +251,8 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-view-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="field-group">
-              <label class="arrival-date title-label" for="arrival-date">Дата Заезда:</label>
+            <div class="field-group-arrival">
+              <label class="arrival-date title-label" for="arrival-date">Дата&nbspЗаезда:</label>
               <input class="modal-view-field" type="text" id="arrival-date" name="arrival-date"
                 placeholder="27 апреля 2020">
               <button class="button-book-date" type="button">
@@ -261,8 +261,8 @@
               <p class="text-after-arrival">Мы не можем отправить вас в прошлое.</p>
             </div>
 
-            <div class="field-group">
-              <label class="departure-date title-label" for="departure-date">Дата Выезда:</label>
+            <div class="field-group-departure">
+              <label class="departure-date title-label" for="departure-date">Дата&nbspВыезда:</label>
               <input class="modal-view-field" type="text" id="departure-date" name="departure-date"
                 placeholder="1 сентября 2021">
               <button class="button-book-date" type="button">
@@ -271,9 +271,9 @@
               <p class="text-after-departure">На эти даты есть свободные номера. Пока есть.</p>
             </div>
 
-
-            <div class="field-group">
-              <label class="label-field  label-field-adults title-label" for="adults">Взрослые:</label>
+<div class="field-group-number">
+            <div class="field-group-adults">
+              <label class="label-field-adults title-label" for="adults">Взрослые:</label>
               <input class="field-amount" type="number" id="adults-amount" name="adults-amount" value="2">
               <button class="button-minus-adults" type="button">
                 <span class="visually-hidden">Минус</span>
@@ -281,9 +281,10 @@
               <button class="button-plus-adults" type="button">
                 <span class="visually-hidden">Плюс</span>
               </button>
+              </div>
 
-              <div class="field-group">
-                <label class="label-field label-field-child title-label" for="child">Дети:</label>
+              <div class="field-group-child">
+                <label class="label-field-child title-label" for="child">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-button" type="button" aria-labelledby="tooltip-label"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
@@ -297,10 +298,9 @@
                 <button class="button-plus-child" type="button">
                   <span class="visually-hidden">Плюс</span>
                 </button>
-
               </div>
             </div>
-
+</div>
             <button class="button button-search-hotels" type="submit">Найти</button>
 
           </form>
