@@ -997,7 +997,7 @@ img {
 .field-group-adults {
   position: relative;
   display: flex;
-  margin-right: 56px;
+  margin-right: 55px;
 }
 
 .label-field-adults {
@@ -1072,7 +1072,12 @@ img {
 
 .tooltip {
   position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
   left: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 .tooltip-button {
@@ -1088,8 +1093,8 @@ img {
   height: 25px;
   padding: 0;
   cursor: help;
-  bottom: 50%;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateY(-50%);
 }
 
 .tooltip-text::before {
@@ -1098,7 +1103,7 @@ img {
   width: 19px;
   height: 9px;
   top: -15px;
-  left: 45%;
+  left: 50%;
 }
 
 .tooltip-button:hover {
@@ -1125,6 +1130,7 @@ img {
   border-radius: 10%;
   margin-top: 14px;
   z-index: 1;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
 }
