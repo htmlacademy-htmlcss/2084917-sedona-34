@@ -865,8 +865,6 @@ img {
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 63px;
-  /* margin-right: 111px;
-  margin-left: 68px; */
 }
 
 .title-label {
@@ -889,16 +887,18 @@ img {
 }
 
 .label-field-adults {
-  margin-right: 64px;
+  margin-right: 56px;
+  margin-top: 11px;
 }
 
 .label-field-child {
   margin-right: 43px;
+  margin-top: 11px;
 }
 
 .field-group {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 11px;
 }
 
 .modal-view-field {
@@ -914,7 +914,7 @@ img {
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  margin-bottom: 9px;
+  margin-bottom: 40px;
 }
 
 .modal-view-field::placeholder {
@@ -975,6 +975,7 @@ img {
   color: #333333;
   text-transform: none;
   left: 222px;
+  margin: 0;
   margin-top: 60px;
 }
 
@@ -982,28 +983,24 @@ img {
   color: #FF5757;
 }
 
-/* .field-group-amount {
-  position: relative;
-  display: flex;
-} */
-
 .field-amount {
   position: relative;
   display: block;
-  width: 107px;
-  appearance: textfield;
+  width: 133px;
+  height: 50px;
   background-color: #F2F2F2;
   border: 2px solid transparent;
   border-radius: 4px;
   margin-right: 56px;
-}
-
-.field-amount::placeholder {
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
+  appearance: textfield;
 }
 
 .button-minus-adults {
@@ -1016,6 +1013,8 @@ img {
   cursor: pointer;
   left: 222px;
   border: none;
+  margin-top: 28px;
+  margin-left: 19px;
 }
 
 .button-plus-adults {
@@ -1027,9 +1026,9 @@ img {
   height: 13px;
   cursor: pointer;
   left: 300px;
-  top: 390px;
-  padding: 18px 19px;
   border: none;
+  margin-top: 20px;
+  margin-left: 19px;
 }
 
 .button-minus-child {
@@ -1038,10 +1037,11 @@ img {
   background-repeat: no-repeat;
   background-color: transparent;
   width: 13px;
-  height: 13px;
+  height: 1px;
   cursor: pointer;
-  top: ;
-  right: 190px;
+  margin-top: 28px;
+  margin-left: 19px;
+  right: 185px;
   border: none;
 }
 
@@ -1055,12 +1055,12 @@ img {
   cursor: pointer;
   color: #000000;
   right: 110px;
-  top: 375px;
-  padding: 18px 19px;
+  top: 370px;
   border: none;
+  margin-top: 25px;
 }
 
-.button-minus:hover,
+.button-minus-adults:hover,
 .button-plus-adults:hover {
   color: #000000;
 }
@@ -1071,13 +1071,13 @@ img {
   opacity: 20%;
 }
 
-.button-minus:focus,
+.button-minus-adults:focus,
 .button-plus-adults:focus {
   color: #000000;
   outline: 3px solid #83B3D3;
 }
 
-.button-minus:default,
+.button-minus-adults:default,
 .button-plus-adults:default {
   color: #000000;
   opacity: 30%;
@@ -1106,8 +1106,8 @@ img {
   padding: 0;
   cursor: help;
   margin-left: 54px;
+  margin-top: 12px;
 }
-
 
 .tooltip-text::before {
   position: absolute;
@@ -1143,13 +1143,11 @@ img {
   margin-top: 14px;
   z-index: 1;
   transform: translate(-56px);
-
   display: none;
 }
 
-
 .button-search-hotels {
-  width: 575px;
+  width: 577px;
   background-color: #83B3D3;
   padding: 12px 26px;
   font-size: 20px;
@@ -1168,7 +1166,6 @@ img {
   display: none;
 }
 
-/*  */
 .page-container-catalog {
   width: 1200px;
   margin: 0 auto;
@@ -1468,11 +1465,11 @@ img {
   background-color: #E5E5E5;
 }
 
-/* .range-input::-webkit-outer-spin-button,
+.range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-} */
+}
 
 .filter-price-title {
   font-weight: 700;
