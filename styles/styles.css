@@ -988,7 +988,8 @@ img {
 
 .field-group-number {
   display: flex;
-  margin: 0;
+  margin-bottom: 40px;
+
 }
 
 .field-group-adults {
@@ -998,6 +999,7 @@ img {
 }
 
 .label-field-adults {
+  position: relative;
   margin-right: 64px;
   margin-top: 12px;
 }
@@ -1054,7 +1056,12 @@ img {
   right: 19px;
 }
 
+.tooltip-group {
+  position: relative;
+}
+
 .label-field-child {
+  display: block;
   margin-right: 43px;
   margin-top: 11px;
 }
@@ -1064,7 +1071,7 @@ img {
 }
 
 .tooltip-button {
-  position: relative;
+  position: absolute;
   display: block;
   background-image: url("../images/pictures-html/icon-info.svg");
   background-repeat: no-repeat;
@@ -1076,8 +1083,8 @@ img {
   height: 25px;
   padding: 0;
   cursor: help;
-  margin-left: 54px;
-  margin-top: 12px;
+  bottom: 50%;
+  transform: translateX(50%);
 }
 
 .tooltip-text::before {
@@ -1113,8 +1120,8 @@ img {
   border-radius: 10%;
   margin-top: 14px;
   z-index: 1;
-  transform: translate(-56px);
-  display: none;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .field-group-child {
