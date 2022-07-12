@@ -271,19 +271,18 @@
               <p class="text-after-departure">На эти даты есть свободные номера. Пока есть.</p>
             </div>
 
-<div class="field-group-number">
-            <div class="field-group-adults">
+            <div class="field-group-number">
               <label class="label-field-adults title-label" for="adults">Взрослые:</label>
-              <input class="field-amount" type="number" id="adults-amount" name="adults-amount" value="2">
-              <button class="button-minus-adults" type="button">
-                <span class="visually-hidden">Минус</span>
-              </button>
-              <button class="button-plus-adults" type="button">
-                <span class="visually-hidden">Плюс</span>
-              </button>
+              <div class="field-group-adults">
+                <input class="field-amount" type="number" id="adults-amount" name="adults-amount" value="2">
+                <button class="button-minus-adults" type="button">
+                  <span class="visually-hidden">Минус</span>
+                </button>
+                <button class="button-plus-adults" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                </button>
               </div>
 
-              <div class="field-group-child">
                 <label class="label-field-child title-label" for="child">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-button" type="button" aria-labelledby="tooltip-label"></button>
@@ -291,6 +290,7 @@
                     вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </span>
                 </span>
+                <div class="field-group-child">
                 <input class="field-amount" type="number" id="child-amount" name="child-amount" value="1">
                 <button class="button-minus-child" type="button">
                   <span class="visually-hidden">Минус</span>
@@ -300,12 +300,12 @@
                 </button>
               </div>
             </div>
-</div>
-            <button class="button button-search-hotels" type="submit">Найти</button>
-
-          </form>
-        </section>
       </div>
+      <button class="button button-search-hotels" type="submit">Найти</button>
+
+      </form>
+      </section>
+    </div>
 
     </div>
   </body>
