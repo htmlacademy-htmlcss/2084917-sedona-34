@@ -1083,8 +1083,7 @@ img {
   display: block;
   width: 25px;
   height: 25px;
-  left: 50%;
-  transform: translateY(-50%);
+  left: 37px;
   z-index: 1;
 }
 
@@ -1101,8 +1100,8 @@ img {
   height: 25px;
   padding: 0;
   cursor: help;
-  left: 50%;
-  transform: translateY(-50%);
+  left: 14px;
+  top: -24px;
 }
 
 .tooltip-text::before {
@@ -1136,11 +1135,10 @@ img {
   height: 110px;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   border-radius: 10%;
-  margin-top: 14px;
+  margin-top: 22px;
   z-index: 1;
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: -110px;
 }
 
 .field-group-child {
@@ -1235,7 +1233,7 @@ img {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .page-container-catalog {
@@ -1981,8 +1979,8 @@ img {
 
 .pagination {
   display: flex;
-  /* flex-wrap: wrap; */
-  max-width: 400px;
+  flex-wrap: wrap;
+  max-width: 420px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
