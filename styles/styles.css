@@ -35,7 +35,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .shadow-container {
@@ -1028,14 +1028,15 @@ img {
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  -moz-appearance: textfield;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .field-amount::-webkit-outer-spin-button,
 .field-amount::-webkit-inner-spin-button {
   margin: 0;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .button-minus-adults {
@@ -1507,7 +1508,8 @@ img {
   font: inherit;
   background-color: transparent;
   border: 2px solid #ffffff;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input-min {
@@ -1540,7 +1542,8 @@ img {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1668,7 +1671,8 @@ img {
   background-repeat: no-repeat;
   background-position: right 21px center;
   border: 2px solid transparent;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control-current {
@@ -1914,6 +1918,8 @@ img {
 }
 
 .hotel-rating-4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: hotel-rating-4;
   display: block;
   background-image: url("../images/pictures-catalog/icon-hotel-star.svg");
@@ -1924,6 +1930,8 @@ img {
 }
 
 .hotel-rating-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: hotel-rating-3;
   display: block;
   background-image: url("../images/pictures-catalog/icon-hotel-star.svg");
@@ -1934,6 +1942,8 @@ img {
 }
 
 .hotel-rating-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: hotel-rating-2;
   display: block;
   background-image: url("../images/pictures-catalog/icon-hotel-star.svg");
@@ -1944,6 +1954,9 @@ img {
 }
 
 .button-rating {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
   grid-area: button-rating;
   font-weight: 400;
   color: #333333;
