@@ -1673,7 +1673,7 @@ img {
   color: #333333;
   width: 290px;
   height: 49px;
-  padding: 14px 20px;
+  padding: 12px 20px;
   padding-right: 97px;
   margin: 0 auto;
   margin-right: 78px;
@@ -1683,6 +1683,7 @@ img {
   background-image: url("../images/pictures-catalog/selector-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
+  background-color: #ffffff;
   border: 2px solid transparent;
   -webkit-appearance: none;
           appearance: none;
@@ -1997,15 +1998,14 @@ img {
 .pagination {
   display: flex;
   flex-wrap: wrap;
-  max-width: 420px;
+  max-width: 460px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-right: 260px;
-
+  margin-top: 30px;
 }
 
 .pagination-item:not(:last-child) {
@@ -2059,6 +2059,7 @@ img {
   max-width: 387px;
   margin-left: auto;
   border: none;
+  padding-top: 30px;
 }
 
 .hotels-amount-title {
@@ -2076,6 +2077,6 @@ img {
   width: 160px;
   padding: 14px 20px;
   padding-right: 98px;
-  margin-right: 0;
   border: 2px solid #E5E5E5;
+  margin-right: 0;
 }
