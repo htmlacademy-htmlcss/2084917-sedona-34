@@ -489,17 +489,17 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   margin-top: 0;
 }
 
 .advantages-number {
+  display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  margin-bottom: 30px;
-
+  margin-bottom: 33px;
 }
 
 .advantages-description {
@@ -522,18 +522,25 @@ img {
 .advantages-title-town,
 .advantages-title-bridge,
 .advantages-number-blue {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
+
+.advantages-number-blue {
+  display: block;
+  margin-bottom: 31px;
+}
+
 
 .main-advantages {
   padding: 103px 85px;
 }
 
 .additional-advantages {
-  padding: 182px 85px 81px;
+  padding: 183px 85px 81px;
 }
 
 .icon-accommodation {
+  display: block;
   background-image: url("../images/pictures-html/icon-accommodation.svg");
   background-repeat: no-repeat;
   background-size: 76px 73px;
@@ -541,6 +548,7 @@ img {
 }
 
 .icon-food {
+  display: block;
   background-image: url("../images/pictures-html/icon-food.svg");
   background-repeat: no-repeat;
   background-size: 75px 71px;
@@ -548,10 +556,12 @@ img {
 }
 
 .icon-presents {
+  display: block;
   background-image: url("../images/pictures-html/icon-presents.svg");
   background-repeat: no-repeat;
   background-size: 65px 77px;
   background-position: 163px 80px;
+
 }
 
 .main-advantages,
@@ -591,7 +601,7 @@ img {
 }
 
 .hotel-search {
-  padding: 91px 304px 93px;
+  padding: 90px 303px 93px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -601,8 +611,7 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .hotel-search-subtitle {
@@ -611,7 +620,7 @@ img {
   line-height: 26px;
   text-transform: none;
   color: #333333;
-  margin-bottom: 56px;
+  margin-bottom: 58px;
 }
 
 .newsletter {
@@ -660,7 +669,7 @@ img {
 .field {
   width: 600px;
   margin: 0;
-  padding: 20px 22px;
+  padding: 18px 22px 18px 21px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -763,8 +772,9 @@ img {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 5px;
+  padding-top: 6px;
   padding-bottom: 5px;
+  margin-left: -8px;
 }
 
 .footer-contacts-phone:hover,
@@ -782,7 +792,7 @@ img {
 }
 
 .htmlacademy-link {
-  padding-top: 5px;
+  padding-top: 8px;
   padding-bottom: 5px;
 }
 
